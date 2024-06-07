@@ -1,2 +1,2 @@
-# algorithms
-Data Structure and Algorithms
+
+### How to Machine Learning - by TEACH ME CODES
