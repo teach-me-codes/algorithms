@@ -683,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../depth_first_search.md" class="md-nav__link">
+      <a href="../depth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -703,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../breadth_first_search.md" class="md-nav__link">
+      <a href="../breadth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,11 +723,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../dijkstras_algorithm.md" class="md-nav__link">
+      <a href="../dijkstras_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dijkstras Algorithm
+    Dijkstra's Algorithm
   </span>
   
 
@@ -743,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman_ford_algorithm.md" class="md-nav__link">
+      <a href="../bellman_ford_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -763,11 +763,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../a_star_algorithm.md" class="md-nav__link">
+      <a href="../a_star_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    A Star Algorithm
+    A* Algorithm
   </span>
   
 
@@ -783,11 +783,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskals_algorithm.md" class="md-nav__link">
+      <a href="../kruskals_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Kruskals Algorithm
+    Kruskal's Algorithm
   </span>
   
 
@@ -803,11 +803,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims_algorithm.md" class="md-nav__link">
+      <a href="../prims_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prims Algorithm
+    Prim's Algorithm
   </span>
   
 
@@ -823,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd_warshall_algorithm.md" class="md-nav__link">
+      <a href="../floyd_warshall_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1884,7 +1884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union_find.md" class="md-nav__link">
+      <a href="../union_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2953,7 +2953,7 @@
 <li>Let the original array be represented by <code>arr[]</code> of size <code>n</code>, and the Fenwick Tree by <code>BIT[]</code>:</li>
 <li>To efficiently calculate the prefix sum up to index <code>i</code>, the operations involve manipulating binary representations. The index <code>i</code> can be seen as a binary number, and we use the least significant bit to traverse the tree.</li>
 </ul>
-<p><span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">BIT[i] = \sum_{j = i - 2^r + 1}^{i} arr[j]</span><script type="math/tex">BIT[i] = \sum_{j = i - 2^r + 1}^{i} arr[j]</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">BIT[i] = \sum_{j = i - 2^r + 1}^{i} arr[j]</span><script type="math/tex">BIT[i] = \sum_{j = i - 2^r + 1}^{i} arr[j]</script></span></script></span>
+<p><span class="arithmatex">\(<span class="arithmatex">\(BIT[i] = \sum_{j = i - 2^r + 1}^{i} arr[j]\)</span>\)</span>
 - where <code>r</code> is the position of the least significant set bit (starting from 1) in the binary representation of <code>i</code>.</p>
 <h4 id="code-implementation-in-python">Code Implementation in Python:</h4>
 <div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #006699; font-weight: bold">def</span> <span style="color: #CC00FF">update</span>(bit, idx, val):
@@ -3125,7 +3125,7 @@
 <p><strong>Prefix Sums</strong>: Fenwick Trees excel in calculating prefix sums efficiently, making them ideal for frequency analysis tasks, tracking cumulative frequencies.</p>
 </li>
 <li>
-<p><strong>Update Operations</strong>: With Fenwick Trees, updating an element's frequency or modifying the array can be done in optimal <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">O(\log N)</span><script type="math/tex">O(\log N)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">O(\log N)</span><script type="math/tex">O(\log N)</script></span></script></span> time complexity.</p>
+<p><strong>Update Operations</strong>: With Fenwick Trees, updating an element's frequency or modifying the array can be done in optimal <span class="arithmatex">\(<span class="arithmatex">\(O(\log N)\)</span>\)</span> time complexity.</p>
 </li>
 <li>
 <p><strong>Range Queries</strong>: Provide effective support for range queries, enabling quick cumulative frequency computations within a specified range.</p>
@@ -3151,7 +3151,7 @@
 <p>Fenwick Trees offer advantages for dynamic updates and inquiries on element frequencies:</p>
 <ul>
 <li>
-<p><strong>Efficient Updates</strong>: Adjust multiple tree nodes efficiently in <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">O(\log N)</span><script type="math/tex">O(\log N)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">O(\log N)</span><script type="math/tex">O(\log N)</script></span></script></span> time complexity for dynamic frequency changes.</p>
+<p><strong>Efficient Updates</strong>: Adjust multiple tree nodes efficiently in <span class="arithmatex">\(<span class="arithmatex">\(O(\log N)\)</span>\)</span> time complexity for dynamic frequency changes.</p>
 </li>
 <li>
 <p><strong>Cumulative Frequency Retrieval</strong>: Provide cumulative frequencies up to a given index for dynamic inquiries related to element frequencies.</p>
@@ -3228,7 +3228,7 @@
 </li>
 <li>Fenwick Trees excel in performing updates on the cumulative frequency values. They can efficiently handle incremental updates with low time complexity, particularly for increasing or decreasing the frequency of elements in the dataset.</li>
 <li>
-<p>The update operation in Fenwick Trees has a time complexity of <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">O(\log n)</span><script type="math/tex">O(\log n)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">O(\log n)</span><script type="math/tex">O(\log n)</script></span></script></span>, where <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span></script></span> represents the number of elements in the Fenwick Tree. This efficient update operation contributes to quicker modifications in cumulative sum values.</p>
+<p>The update operation in Fenwick Trees has a time complexity of <span class="arithmatex">\(<span class="arithmatex">\(O(\log n)\)</span>\)</span>, where <span class="arithmatex">\(<span class="arithmatex">\(n\)</span>\)</span> represents the number of elements in the Fenwick Tree. This efficient update operation contributes to quicker modifications in cumulative sum values.</p>
 </li>
 <li>
 <p><strong>Reduced Memory Overhead</strong>:</p>
@@ -3246,7 +3246,7 @@
 <h4 id="in-what-scenarios-would-the-use-of-fenwick-trees-lead-to-significant-performance-improvements-over-brute-force-or-alternative-methods">In what scenarios would the use of Fenwick Trees lead to significant performance improvements over brute force or alternative methods?</h4>
 <ul>
 <li><strong>Frequent Prefix Sum Queries</strong>:</li>
-<li>When the algorithm requires frequent prefix sum queries over an array or sequence, Fenwick Trees outperform brute force methods by providing <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">O(\log n)</span><script type="math/tex">O(\log n)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">O(\log n)</span><script type="math/tex">O(\log n)</script></span></script></span> query time complexity compared to <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">O(n)</span><script type="math/tex">O(n)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">O(n)</span><script type="math/tex">O(n)</script></span></script></span> in the brute force approach.</li>
+<li>When the algorithm requires frequent prefix sum queries over an array or sequence, Fenwick Trees outperform brute force methods by providing <span class="arithmatex">\(<span class="arithmatex">\(O(\log n)\)</span>\)</span> query time complexity compared to <span class="arithmatex">\(<span class="arithmatex">\(O(n)\)</span>\)</span> in the brute force approach.</li>
 <li>Applications involving cumulative sum calculations, such as range sum queries or frequency analysis, benefit significantly from the efficiency of Fenwick Trees.</li>
 </ul>
 <h4 id="what-strategies-can-be-employed-to-optimize-the-utilization-of-fenwick-trees-in-specialized-algorithms-or-applications-for-better-efficiency">What strategies can be employed to optimize the utilization of Fenwick Trees in specialized algorithms or applications for better efficiency?</h4>
@@ -3280,14 +3280,14 @@
 <h4 id="cumulative-sums">Cumulative Sums:</h4>
 <ul>
 <li><strong>Definition</strong>: Cumulative sum, also known as prefix sum, is the running total of a sequence of numbers up to a certain position in the sequence.</li>
-<li><strong>Mathematically</strong>: Given an array <span class="arithmatex"><span class="MathJax_Preview">arr</span><script type="math/tex">arr</script></span> of <span class="arithmatex"><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> elements, the cumulative sum <span class="arithmatex"><span class="MathJax_Preview">cumsum[i]</span><script type="math/tex">cumsum[i]</script></span> at position <span class="arithmatex"><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span> is calculated as:</li>
+<li><strong>Mathematically</strong>: Given an array <span class="arithmatex">\(arr\)</span> of <span class="arithmatex">\(n\)</span> elements, the cumulative sum <span class="arithmatex">\(cumsum[i]\)</span> at position <span class="arithmatex">\(i\)</span> is calculated as:</li>
 </ul>
-<p><span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">cumsum[i] = arr[0] + arr[1] + \ldots + arr[i]</span><script type="math/tex">cumsum[i] = arr[0] + arr[1] + \ldots + arr[i]</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">cumsum[i] = arr[0] + arr[1] + \ldots + arr[i]</span><script type="math/tex">cumsum[i] = arr[0] + arr[1] + \ldots + arr[i]</script></span></script></span>
-- <strong>Significance</strong>: Cumulative sums are fundamental in many algorithmic problems as they help in quickly finding the sum of elements over a range <span class="arithmatex"><span class="MathJax_Preview">[i, j]</span><script type="math/tex">[i, j]</script></span> with <span class="arithmatex"><span class="MathJax_Preview">O(1)</span><script type="math/tex">O(1)</script></span> complexity, making them essential in optimization tasks.</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(cumsum[i] = arr[0] + arr[1] + \ldots + arr[i]\)</span>\)</span>
+- <strong>Significance</strong>: Cumulative sums are fundamental in many algorithmic problems as they help in quickly finding the sum of elements over a range <span class="arithmatex">\([i, j]\)</span> with <span class="arithmatex">\(O(1)\)</span> complexity, making them essential in optimization tasks.</p>
 <h4 id="fenwick-trees-and-cumulative-sums">Fenwick Trees and Cumulative Sums:</h4>
 <ul>
 <li><strong>Structure</strong>: Fenwick Trees are binary trees designed to compute and maintain cumulative sums efficiently.</li>
-<li><strong>Efficient Queries</strong>: They enable fast updates and queries for cumulative sums over ranges by leveraging the tree structure to achieve <span class="arithmatex"><span class="MathJax_Preview">O(\log n)</span><script type="math/tex">O(\log n)</script></span> complexity instead of <span class="arithmatex"><span class="MathJax_Preview">O(n)</span><script type="math/tex">O(n)</script></span>.</li>
+<li><strong>Efficient Queries</strong>: They enable fast updates and queries for cumulative sums over ranges by leveraging the tree structure to achieve <span class="arithmatex">\(O(\log n)\)</span> complexity instead of <span class="arithmatex">\(O(n)\)</span>.</li>
 <li><strong>Connection</strong>: The values stored in the Fenwick Tree nodes represent precomputed sums of elements in the input array at specific indices, facilitating speedy calculations of cumulative sums for various ranges.</li>
 </ul>
 <h3 id="follow-up-questions_3">Follow-up Questions:</h3>
@@ -3295,7 +3295,7 @@
 <ul>
 <li><strong>Point Update</strong>: Update an element of the Fenwick Tree to maintain the cumulative sums efficiently after a value change in the input array.</li>
 <li><strong>Prefix Sum Query</strong>: Fetch the cumulative sum up to a specific index in the input array using the Fenwick Tree structure.</li>
-<li><strong>Range Sum Query</strong>: Compute the cumulative sum over a range <span class="arithmatex"><span class="MathJax_Preview">[i, j]</span><script type="math/tex">[i, j]</script></span> efficiently by combining prefix sums at appropriate indices.</li>
+<li><strong>Range Sum Query</strong>: Compute the cumulative sum over a range <span class="arithmatex">\([i, j]\)</span> efficiently by combining prefix sums at appropriate indices.</li>
 </ul>
 <h4 id="applications-of-cumulative-sums-in-algorithmic-problems-using-fenwick-trees">Applications of Cumulative Sums in Algorithmic Problems Using Fenwick Trees:</h4>
 <ul>
@@ -3338,8 +3338,8 @@
 <p><strong>Efficient Range Query Operations</strong>:</p>
 </li>
 <li>To calculate the sum of elements within a range <code>[1, i]</code> efficiently:
-     <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">\text{sum}(i) = \text{tree}[pi_1]\ +\ \text{tree}[pi_2]\ +\ \ldots\ +\ \text{tree}[pi_k]</span><script type="math/tex">\text{sum}(i) = \text{tree}[pi_1]\ +\ \text{tree}[pi_2]\ +\ \ldots\ +\ \text{tree}[pi_k]</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">\text{sum}(i) = \text{tree}[pi_1]\ +\ \text{tree}[pi_2]\ +\ \ldots\ +\ \text{tree}[pi_k]</span><script type="math/tex">\text{sum}(i) = \text{tree}[pi_1]\ +\ \text{tree}[pi_2]\ +\ \ldots\ +\ \text{tree}[pi_k]</script></span></script></span>
-     where <span class="arithmatex"><span class="MathJax_Preview">pi</span><script type="math/tex">pi</script></span> represents the parent indices obtained by flipping the least significant bit.</li>
+     <span class="arithmatex">\(<span class="arithmatex">\(\text{sum}(i) = \text{tree}[pi_1]\ +\ \text{tree}[pi_2]\ +\ \ldots\ +\ \text{tree}[pi_k]\)</span>\)</span>
+     where <span class="arithmatex">\(pi\)</span> represents the parent indices obtained by flipping the least significant bit.</li>
 <li>
 <p>Performing a range query involves combining prefix sums of appropriate nodes to achieve the desired range sum efficiently.</p>
 </li>
@@ -3347,9 +3347,9 @@
 <p><strong>Updating Values Across Multiple Indices</strong>:</p>
 </li>
 <li>Fenwick Trees allow for updating values across multiple indices efficiently.</li>
-<li>To update a particular element at index <span class="arithmatex"><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span> by value <span class="arithmatex"><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span>:<ul>
-<li>Update the Fenwick Tree nodes by adding <span class="arithmatex"><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> appropriately to maintain the cumulative sum property.</li>
-<li>Iterate through affected nodes based on the binary representation of index <span class="arithmatex"><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span> to perform updates efficiently.</li>
+<li>To update a particular element at index <span class="arithmatex">\(i\)</span> by value <span class="arithmatex">\(v\)</span>:<ul>
+<li>Update the Fenwick Tree nodes by adding <span class="arithmatex">\(v\)</span> appropriately to maintain the cumulative sum property.</li>
+<li>Iterate through affected nodes based on the binary representation of index <span class="arithmatex">\(i\)</span> to perform updates efficiently.</li>
 </ul>
 </li>
 </ol>
@@ -3440,14 +3440,14 @@
 <p><strong>Ensuring Efficiency in Query Responses</strong>:</p>
 </li>
 <li>By dynamically adjusting the structure upon updates, Fenwick Trees maintain the property that any prefix sum query can be answered efficiently.</li>
-<li>The tree's structure enables the calculation of prefix sums with low time complexity, typically <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">O(\log n)</span><script type="math/tex">O(\log n)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">O(\log n)</span><script type="math/tex">O(\log n)</script></span></script></span>, making it suitable for applications requiring frequent updates and queries.</li>
+<li>The tree's structure enables the calculation of prefix sums with low time complexity, typically <span class="arithmatex">\(<span class="arithmatex">\(O(\log n)\)</span>\)</span>, making it suitable for applications requiring frequent updates and queries.</li>
 </ul>
 <h3 id="follow-up-questions_5">Follow-up Questions:</h3>
 <h4 id="what-is-the-algorithmic-complexity-involved-in-updating-a-single-element-in-a-fenwick-tree-and-propagating-the-changes-to-higher-level-nodes">What is the Algorithmic Complexity Involved in Updating a Single Element in a Fenwick Tree and Propagating the Changes to Higher-level Nodes?</h4>
 <ul>
 <li><strong>Algorithmic Complexity</strong>:</li>
 <li>Updating a single element in a Fenwick Tree involves propagating the changes upwards to higher-level nodes, with each node storing cumulative sums over specific ranges.</li>
-<li>The complexity of updating a single element and propagating changes is <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">O(\log n)</span><script type="math/tex">O(\log n)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">O(\log n)</span><script type="math/tex">O(\log n)</script></span></script></span>, where n is the total number of elements in the Fenwick Tree.</li>
+<li>The complexity of updating a single element and propagating changes is <span class="arithmatex">\(<span class="arithmatex">\(O(\log n)\)</span>\)</span>, where n is the total number of elements in the Fenwick Tree.</li>
 <li>The logarithmic complexity arises from the binary nature of Fenwick Trees and the efficient propagation of updates through the tree structure.</li>
 </ul>
 <h4 id="can-you-explain-any-potential-challenges-or-edge-cases-that-may-arise-when-performing-frequent-updates-in-a-fenwick-tree-based-algorithm">Can You Explain Any Potential Challenges or Edge Cases That May Arise When Performing Frequent Updates in a Fenwick Tree-Based Algorithm?</h4>
@@ -3831,7 +3831,9 @@
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>

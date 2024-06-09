@@ -683,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../depth_first_search.md" class="md-nav__link">
+      <a href="../depth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -703,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../breadth_first_search.md" class="md-nav__link">
+      <a href="../breadth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,11 +723,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../dijkstras_algorithm.md" class="md-nav__link">
+      <a href="../dijkstras_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dijkstras Algorithm
+    Dijkstra's Algorithm
   </span>
   
 
@@ -743,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman_ford_algorithm.md" class="md-nav__link">
+      <a href="../bellman_ford_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -763,11 +763,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../a_star_algorithm.md" class="md-nav__link">
+      <a href="../a_star_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    A Star Algorithm
+    A* Algorithm
   </span>
   
 
@@ -783,11 +783,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskals_algorithm.md" class="md-nav__link">
+      <a href="../kruskals_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Kruskals Algorithm
+    Kruskal's Algorithm
   </span>
   
 
@@ -803,11 +803,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims_algorithm.md" class="md-nav__link">
+      <a href="../prims_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prims Algorithm
+    Prim's Algorithm
   </span>
   
 
@@ -823,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd_warshall_algorithm.md" class="md-nav__link">
+      <a href="../floyd_warshall_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -963,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union_find.md" class="md-nav__link">
+      <a href="../union_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2892,7 +2892,7 @@
 </ul>
 <h3 id="can-you-provide-an-example-where-amortized-analysis-significantly-improves-the-efficiency-of-an-optimization-technique">Can you provide an example where Amortized Analysis significantly improves the efficiency of an optimization technique?</h3>
 <p>Consider the dynamic array implementation, such as Python's list. The <code>append()</code> operation in a dynamic array can be costly when resizing the underlying array. However, using Amortized Analysis, the average cost per <code>append()</code> operation can be shown to be constant, highlighting the efficiency of the dynamic array.</p>
-<p>Let's consider a scenario where the dynamic array doubles its size whenever it reaches its capacity. Even though resizing the array incurs a substantial cost, this cost is amortized over a series of <code>n</code> append operations. The amortized cost per <code>append()</code> operation remains <span class="arithmatex"><span class="MathJax_Preview">O(1)</span><script type="math/tex">O(1)</script></span> despite occasional expensive resizing operations. This is achieved by halving the array size when removing elements, offsetting the cost of resizing.</p>
+<p>Let's consider a scenario where the dynamic array doubles its size whenever it reaches its capacity. Even though resizing the array incurs a substantial cost, this cost is amortized over a series of <code>n</code> append operations. The amortized cost per <code>append()</code> operation remains <span class="arithmatex">\(O(1)\)</span> despite occasional expensive resizing operations. This is achieved by halving the array size when removing elements, offsetting the cost of resizing.</p>
 <p>The Amortized Analysis of the dynamic array demonstrates that even with potentially expensive operations like resizing, the average cost per operation remains low, providing an efficient way to manage the sequence of operations while ensuring overall performance.</p>
 <p>By showcasing the amortized efficiency of the dynamic array implementation, this example illustrates the practical benefits of utilizing Amortized Analysis in optimizing data structures and algorithms for real-world applications.</p>
 <h2 id="question_1">Question</h2>
@@ -2981,7 +2981,7 @@
 <ul>
 <li><strong>Consistent Performance</strong>:</li>
 <li><strong>Mathematical Representation</strong>: Amortized Analysis allows us to evaluate the average cost of a sequence of operations divided by the number of operations.
-    <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">\text{Average Cost per Operation} = \frac{\text{Total Cost}}{\text{Number of Operations}</span><script type="math/tex">\text{Average Cost per Operation} = \frac{\text{Total Cost}}{\text{Number of Operations}</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">\text{Average Cost per Operation} = \frac{\text{Total Cost}}{\text{Number of Operations}</span><script type="math/tex">\text{Average Cost per Operation} = \frac{\text{Total Cost}}{\text{Number of Operations}</script></span></script></span></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(\text{Average Cost per Operation} = \frac{\text{Total Cost}}{\text{Number of Operations}\)</span>\)</span></li>
 <li>
 <p><strong>Predictability</strong>: By considering the amortized complexity, we can anticipate and guarantee consistent performance across a series of operations, regardless of occasional spikes in individual operation costs.</p>
 </li>
@@ -3084,8 +3084,8 @@
 </ul>
 <h4 id="mathematically-the-aggregate-method-is-represented-as">Mathematically, the aggregate method is represented as:</h4>
 <ul>
-<li>Let <span class="arithmatex"><span class="MathJax_Preview">T(n)</span><script type="math/tex">T(n)</script></span> be the total time taken by a sequence of <span class="arithmatex"><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> operations.</li>
-<li>The <strong>average cost</strong> or <strong>amortized cost per operation</strong> is defined as <span class="arithmatex"><span class="MathJax_Preview">T(n) / n</span><script type="math/tex">T(n) / n</script></span>, representing the average time taken per operation.</li>
+<li>Let <span class="arithmatex">\(T(n)\)</span> be the total time taken by a sequence of <span class="arithmatex">\(n\)</span> operations.</li>
+<li>The <strong>average cost</strong> or <strong>amortized cost per operation</strong> is defined as <span class="arithmatex">\(T(n) / n\)</span>, representing the average time taken per operation.</li>
 </ul>
 <h3 id="follow-up-questions">Follow-up Questions:</h3>
 <h4 id="how-does-the-aggregate-method-help-in-simplifying-the-analysis-of-complex-algorithms-in-terms-of-time-and-space-complexities">How does the aggregate method help in simplifying the analysis of complex algorithms in terms of time and space complexities?</h4>
@@ -3143,7 +3143,7 @@
 <ol>
 <li><strong>Definition of Potential Function in Amortized Analysis</strong>:</li>
 <li>
-<p>A potential function, denoted by <span class="arithmatex"><span class="MathJax_Preview">\Phi</span><script type="math/tex">\Phi</script></span>, assigns a real number to each state in the system being analyzed. It quantifies the energy or cost associated with a specific state or configuration.</p>
+<p>A potential function, denoted by <span class="arithmatex">\(\Phi\)</span>, assigns a real number to each state in the system being analyzed. It quantifies the energy or cost associated with a specific state or configuration.</p>
 </li>
 <li>
 <p><strong>Tracking Amortized Costs</strong>:</p>
@@ -3219,9 +3219,9 @@
 <h4 id="key-principles-and-steps-in-implementing-the-accounting-method">Key Principles and Steps in Implementing the Accounting Method:</h4>
 <ol>
 <li><strong>Define the Amortized Cost</strong>: Assign an amortized cost to each operation, which includes the actual cost of the operation plus some additional "credit" or "charge" that will be used to pay for expensive operations later.</li>
-<li>Let <span class="arithmatex"><span class="MathJax_Preview">C_i</span><script type="math/tex">C_i</script></span> be the actual cost of the <span class="arithmatex"><span class="MathJax_Preview">i^{th}</span><script type="math/tex">i^{th}</script></span> operation and <span class="arithmatex"><span class="MathJax_Preview">A_i</span><script type="math/tex">A_i</script></span> be the amortized cost.</li>
+<li>Let <span class="arithmatex">\(C_i\)</span> be the actual cost of the <span class="arithmatex">\(i^{th}\)</span> operation and <span class="arithmatex">\(A_i\)</span> be the amortized cost.</li>
 <li>
-<p>The amortized cost <span class="arithmatex"><span class="MathJax_Preview">A_i</span><script type="math/tex">A_i</script></span> satisfies the condition: <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">\sum_{i=1}^{n} C_i \leq \sum_{i=1}^{n} A_i</span><script type="math/tex">\sum_{i=1}^{n} C_i \leq \sum_{i=1}^{n} A_i</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">\sum_{i=1}^{n} C_i \leq \sum_{i=1}^{n} A_i</span><script type="math/tex">\sum_{i=1}^{n} C_i \leq \sum_{i=1}^{n} A_i</script></span></script></span></p>
+<p>The amortized cost <span class="arithmatex">\(A_i\)</span> satisfies the condition: <span class="arithmatex">\(<span class="arithmatex">\(\sum_{i=1}^{n} C_i \leq \sum_{i=1}^{n} A_i\)</span>\)</span></p>
 </li>
 <li>
 <p><strong>Maintain the Potential</strong>: The accounting method maintains a potential that accounts for the difference between the actual and amortized costs at any point in time.</p>
@@ -3334,13 +3334,10 @@ am <span style="color: #555555">=</span> AccountingMethod()
 <p><strong>Potential Utilization</strong>: The potential stored in the data structure aids in compensating for the cost of expensive operations by distributing the cost over a series of operations. This balancing act ensures that the average cost per operation remains low over time, even if certain operations are costlier.</p>
 </li>
 <li>
-<p><strong>Mathematical Representation</strong>: Mathematically, the total amortized cost <span class="arithmatex"><span class="MathJax_Preview">A(i)</span><script type="math/tex">A(i)</script></span> of <span class="arithmatex"><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> operations can be expressed as the sum of the actual cost <span class="arithmatex"><span class="MathJax_Preview">C(i)</span><script type="math/tex">C(i)</script></span> of each operation <span class="arithmatex"><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span> and the change in potential <span class="arithmatex"><span class="MathJax_Preview">\Phi(i)</span><script type="math/tex">\Phi(i)</script></span>:</p>
+<p><strong>Mathematical Representation</strong>: Mathematically, the total amortized cost <span class="arithmatex">\(A(i)\)</span> of <span class="arithmatex">\(n\)</span> operations can be expressed as the sum of the actual cost <span class="arithmatex">\(C(i)\)</span> of each operation <span class="arithmatex">\(i\)</span> and the change in potential <span class="arithmatex">\(\Phi(i)\)</span>:</p>
 </li>
 </ul>
-<div class="arithmatex">
-<div class="MathJax_Preview"> A(i) = C(i) + \Phi(i) </div>
-<script type="math/tex; mode=display"> A(i) = C(i) + \Phi(i) </script>
-</div>
+<div class="arithmatex">\[ A(i) = C(i) + \Phi(i) \]</div>
 <ul>
 <li><strong>Evaluation Framework</strong>: The concept of potential provides a structured framework for evaluating the amortized cost of individual operations within an optimization algorithm. By analyzing the potential changes associated with each operation, one can deduce the amortized cost effectively.</li>
 </ul>
@@ -3493,7 +3490,7 @@ am <span style="color: #555555">=</span> AccountingMethod()
 <p><strong>Mathematical Representation</strong>:</p>
 <ul>
 <li>Suppose we have a sequence of n operations. Let the total cost of these operations be C(n). </li>
-<li>The amortized cost per operation is given by <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">\x0crac{C(n)}{n}</span><script type="math/tex">\x0crac{C(n)}{n}</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">\x0crac{C(n)}{n}</span><script type="math/tex">\x0crac{C(n)}{n}</script></span></script></span>. </li>
+<li>The amortized cost per operation is given by <span class="arithmatex">\(<span class="arithmatex">\(\x0crac{C(n)}{n}\)</span>\)</span>. </li>
 <li>Even if some individual operations have a high cost, this analysis ensures that the average cost per operation is bounded.</li>
 </ul>
 </li>
@@ -3755,7 +3752,9 @@ am <span style="color: #555555">=</span> AccountingMethod()
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>

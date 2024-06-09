@@ -1628,7 +1628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../depth_first_search.md" class="md-nav__link">
+      <a href="../depth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1648,7 +1648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../breadth_first_search.md" class="md-nav__link">
+      <a href="../breadth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1668,11 +1668,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../dijkstras_algorithm.md" class="md-nav__link">
+      <a href="../dijkstras_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dijkstras Algorithm
+    Dijkstra's Algorithm
   </span>
   
 
@@ -1688,7 +1688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman_ford_algorithm.md" class="md-nav__link">
+      <a href="../bellman_ford_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1708,11 +1708,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../a_star_algorithm.md" class="md-nav__link">
+      <a href="../a_star_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    A Star Algorithm
+    A* Algorithm
   </span>
   
 
@@ -1728,11 +1728,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskals_algorithm.md" class="md-nav__link">
+      <a href="../kruskals_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Kruskals Algorithm
+    Kruskal's Algorithm
   </span>
   
 
@@ -1748,11 +1748,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims_algorithm.md" class="md-nav__link">
+      <a href="../prims_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prims Algorithm
+    Prim's Algorithm
   </span>
   
 
@@ -1768,7 +1768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd_warshall_algorithm.md" class="md-nav__link">
+      <a href="../floyd_warshall_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1908,7 +1908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union_find.md" class="md-nav__link">
+      <a href="../union_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3159,9 +3159,9 @@
 <p>Hash functions are essential components in implementing Hash Tables, as they enable the mapping of keys to specific locations within the table. Common hash functions used include:</p>
 <ol>
 <li><strong>Division Method</strong>:</li>
-<li><strong>Formula</strong>: <span class="arithmatex"><span class="MathJax_Preview">hash(key) = key \mod N</span><script type="math/tex">hash(key) = key \mod N</script></span><ul>
-<li><span class="arithmatex"><span class="MathJax_Preview">key</span><script type="math/tex">key</script></span>: The key being hashed.</li>
-<li><span class="arithmatex"><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span>: Size of the hash table.</li>
+<li><strong>Formula</strong>: <span class="arithmatex">\(hash(key) = key \mod N\)</span><ul>
+<li><span class="arithmatex">\(key\)</span>: The key being hashed.</li>
+<li><span class="arithmatex">\(N\)</span>: Size of the hash table.</li>
 </ul>
 </li>
 <li><strong>Properties</strong>:<ul>
@@ -3179,13 +3179,13 @@
 <li>
 <p><strong>Multiplication Method</strong>:</p>
 </li>
-<li><strong>Formula</strong>: <span class="arithmatex"><span class="MathJax_Preview">hash(key) = \lfloor N \times (key \times A \mod 1) \rfloor</span><script type="math/tex">hash(key) = \lfloor N \times (key \times A \mod 1) \rfloor</script></span><ul>
-<li><span class="arithmatex"><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>: A constant (typically chosen as the golden ratio <span class="arithmatex"><span class="MathJax_Preview">(\varphi)</span><script type="math/tex">(\varphi)</script></span>).</li>
+<li><strong>Formula</strong>: <span class="arithmatex">\(hash(key) = \lfloor N \times (key \times A \mod 1) \rfloor\)</span><ul>
+<li><span class="arithmatex">\(A\)</span>: A constant (typically chosen as the golden ratio <span class="arithmatex">\((\varphi)\)</span>).</li>
 </ul>
 </li>
 <li><strong>Properties</strong>:<ul>
 <li>Helps in distributing keys more uniformly.</li>
-<li>Requires careful selection of the constant <span class="arithmatex"><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>.</li>
+<li>Requires careful selection of the constant <span class="arithmatex">\(A\)</span>.</li>
 </ul>
 </li>
 <li>
@@ -3198,9 +3198,9 @@
 <li>
 <p><strong>Universal Hashing</strong>:</p>
 </li>
-<li><strong>Formula</strong>: <span class="arithmatex"><span class="MathJax_Preview">hash(key) = ((a \times key + b) \mod p) \mod N</span><script type="math/tex">hash(key) = ((a \times key + b) \mod p) \mod N</script></span><ul>
-<li><span class="arithmatex"><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span>, <span class="arithmatex"><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span>: Randomly chosen constants.</li>
-<li><span class="arithmatex"><span class="MathJax_Preview">p</span><script type="math/tex">p</script></span>: A prime number greater than the universe size.</li>
+<li><strong>Formula</strong>: <span class="arithmatex">\(hash(key) = ((a \times key + b) \mod p) \mod N\)</span><ul>
+<li><span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>: Randomly chosen constants.</li>
+<li><span class="arithmatex">\(p\)</span>: A prime number greater than the universe size.</li>
 </ul>
 </li>
 <li><strong>Properties</strong>:<ul>
@@ -3304,7 +3304,7 @@
 </ul>
 <h4 id="can-you-elaborate-on-the-computational-complexity-of-rehashing-operations-in-hash-tables-and-its-implications-on-large-scale-datasets">Can you elaborate on the computational complexity of rehashing operations in Hash Tables and its implications on large-scale datasets?</h4>
 <ul>
-<li><strong>Computational Complexity</strong>: Rehashing in a hash table involves iterating through all existing key-value pairs, recomputing hash codes, and redistributing elements to new locations. The complexity of rehashing is typically <span class="arithmatex"><span class="MathJax_Preview">O(N)</span><script type="math/tex">O(N)</script></span>, where <span class="arithmatex"><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span> is the number of elements in the hash table.</li>
+<li><strong>Computational Complexity</strong>: Rehashing in a hash table involves iterating through all existing key-value pairs, recomputing hash codes, and redistributing elements to new locations. The complexity of rehashing is typically <span class="arithmatex">\(O(N)\)</span>, where <span class="arithmatex">\(N\)</span> is the number of elements in the hash table.</li>
 <li><strong>Large-Scale Datasets</strong>: For large-scale datasets, the rehashing process can become computationally intensive, especially when resizing a massive hash table. This can lead to temporary performance degradation during rehashing operations.</li>
 <li><strong>Optimization</strong>: To optimize rehashing for large-scale datasets, techniques like incremental rehashing can be employed, spreading the rehashing load over multiple steps to reduce the impact on overall performance.</li>
 </ul>
@@ -3335,8 +3335,8 @@
 <li>In chaining, each bucket in the table contains a linked list of key-value pairs that hash to the same index.</li>
 <li>When a collision happens, the new key-value pair is appended to the linked list at that index.</li>
 <li><strong>Mathematical Representation:</strong><ul>
-<li>Let <span class="arithmatex"><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> be the number of slots in the table.</li>
-<li>The probability of two keys hashing to the same slot is given by the load factor <span class="arithmatex"><span class="MathJax_Preview">\alpha = \x0crac{m}{n}</span><script type="math/tex">\alpha = \x0crac{m}{n}</script></span>, where <span class="arithmatex"><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span> is the number of keys hashed to the table.</li>
+<li>Let <span class="arithmatex">\(n\)</span> be the number of slots in the table.</li>
+<li>The probability of two keys hashing to the same slot is given by the load factor <span class="arithmatex">\(\alpha = \x0crac{m}{n}\)</span>, where <span class="arithmatex">\(m\)</span> is the number of keys hashed to the table.</li>
 </ul>
 </li>
 </ul>
@@ -3590,7 +3590,7 @@
 <h4 id="dynamic-resizing-process">Dynamic Resizing Process</h4>
 <ul>
 <li><strong>Hash Table Load Factor</strong>:</li>
-<li>The load factor (<span class="arithmatex"><span class="MathJax_Preview">\lambda</span><script type="math/tex">\lambda</script></span>) of a Hash Table determines when to resize the structure. It's defined as the ratio of the number of stored elements to the total number of slots in the table.</li>
+<li>The load factor (<span class="arithmatex">\(\lambda\)</span>) of a Hash Table determines when to resize the structure. It's defined as the ratio of the number of stored elements to the total number of slots in the table.</li>
 <li>
 <p>Resizing typically occurs when the load factor exceeds a predefined threshold, ensuring efficient space utilization while avoiding excessive collisions.</p>
 </li>
@@ -3608,7 +3608,7 @@
 <p><strong>Performance Impact</strong>:</p>
 </li>
 <li><strong>Time Complexity</strong>:<ul>
-<li>Resizing operations involve rehashing all elements, resulting in a time complexity of <span class="arithmatex"><span class="MathJax_Preview">O(n)</span><script type="math/tex">O(n)</script></span>, where <span class="arithmatex"><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> is the number of elements in the Hash Table.</li>
+<li>Resizing operations involve rehashing all elements, resulting in a time complexity of <span class="arithmatex">\(O(n)\)</span>, where <span class="arithmatex">\(n\)</span> is the number of elements in the Hash Table.</li>
 </ul>
 </li>
 <li>
@@ -3703,13 +3703,13 @@
 <h4 id="comparison-of-time-complexity-with-and-without-collision-resolution">Comparison of Time Complexity with and without Collision Resolution</h4>
 <ul>
 <li><strong>Without Collision Resolution</strong>:<ul>
-<li><em>Search</em>: <span class="arithmatex"><span class="MathJax_Preview">O(1)</span><script type="math/tex">O(1)</script></span> on average without considering collisions.</li>
-<li><em>Insertion/Deletion</em>: <span class="arithmatex"><span class="MathJax_Preview">O(1)</span><script type="math/tex">O(1)</script></span> on average without collisions.</li>
+<li><em>Search</em>: <span class="arithmatex">\(O(1)\)</span> on average without considering collisions.</li>
+<li><em>Insertion/Deletion</em>: <span class="arithmatex">\(O(1)\)</span> on average without collisions.</li>
 </ul>
 </li>
 <li><strong>With Collision Resolution</strong>:<ul>
-<li><em>Search</em>: <span class="arithmatex"><span class="MathJax_Preview">O(n)</span><script type="math/tex">O(n)</script></span> in the worst case when all keys hash to the same index due to a long chain.</li>
-<li><em>Insertion/Deletion</em>: <span class="arithmatex"><span class="MathJax_Preview">O(n)</span><script type="math/tex">O(n)</script></span> in the worst case if rehashing or resizing is required.</li>
+<li><em>Search</em>: <span class="arithmatex">\(O(n)\)</span> in the worst case when all keys hash to the same index due to a long chain.</li>
+<li><em>Insertion/Deletion</em>: <span class="arithmatex">\(O(n)\)</span> in the worst case if rehashing or resizing is required.</li>
 </ul>
 </li>
 </ul>
@@ -3969,7 +3969,9 @@
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>

@@ -1613,7 +1613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../depth_first_search.md" class="md-nav__link">
+      <a href="../depth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1633,7 +1633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../breadth_first_search.md" class="md-nav__link">
+      <a href="../breadth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1653,11 +1653,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../dijkstras_algorithm.md" class="md-nav__link">
+      <a href="../dijkstras_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dijkstras Algorithm
+    Dijkstra's Algorithm
   </span>
   
 
@@ -1673,7 +1673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman_ford_algorithm.md" class="md-nav__link">
+      <a href="../bellman_ford_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1693,11 +1693,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../a_star_algorithm.md" class="md-nav__link">
+      <a href="../a_star_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    A Star Algorithm
+    A* Algorithm
   </span>
   
 
@@ -1713,11 +1713,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskals_algorithm.md" class="md-nav__link">
+      <a href="../kruskals_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Kruskals Algorithm
+    Kruskal's Algorithm
   </span>
   
 
@@ -1733,11 +1733,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims_algorithm.md" class="md-nav__link">
+      <a href="../prims_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prims Algorithm
+    Prim's Algorithm
   </span>
   
 
@@ -1753,7 +1753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd_warshall_algorithm.md" class="md-nav__link">
+      <a href="../floyd_warshall_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1893,7 +1893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union_find.md" class="md-nav__link">
+      <a href="../union_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3304,7 +3304,7 @@
 <li><strong>Exponential Time Complexity</strong>:</li>
 <li>Backtracking algorithms can have exponential time complexity in worst-case scenarios. Since backtracking explores all possible candidates, the number of recursive calls grows exponentially with the problem size, leading to a combinatorial explosion.</li>
 <li>
-<p>The time complexity can be expressed as <span class="arithmatex"><span class="MathJax_Preview">O(b^d)</span><script type="math/tex">O(b^d)</script></span>, where <span class="arithmatex"><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span> is the branching factor (average number of choices at each level) and <span class="arithmatex"><span class="MathJax_Preview">d</span><script type="math/tex">d</script></span> is the maximum depth of the recursion tree.</p>
+<p>The time complexity can be expressed as <span class="arithmatex">\(O(b^d)\)</span>, where <span class="arithmatex">\(b\)</span> is the branching factor (average number of choices at each level) and <span class="arithmatex">\(d\)</span> is the maximum depth of the recursion tree.</p>
 </li>
 <li>
 <p><strong>Memory Usage</strong>:</p>
@@ -3704,7 +3704,7 @@
 <ol>
 <li><strong>Subset Sum Problem Definition</strong>:</li>
 <li>
-<p>Given a set of numbers <span class="arithmatex"><span class="MathJax_Preview">S</span><script type="math/tex">S</script></span> and a target sum <span class="arithmatex"><span class="MathJax_Preview">T</span><script type="math/tex">T</script></span>, the goal is to find a subset of <span class="arithmatex"><span class="MathJax_Preview">S</span><script type="math/tex">S</script></span> that sums up to <span class="arithmatex"><span class="MathJax_Preview">T</span><script type="math/tex">T</script></span>.</p>
+<p>Given a set of numbers <span class="arithmatex">\(S\)</span> and a target sum <span class="arithmatex">\(T\)</span>, the goal is to find a subset of <span class="arithmatex">\(S\)</span> that sums up to <span class="arithmatex">\(T\)</span>.</p>
 </li>
 <li>
 <p><strong>Backtracking Approach</strong>:</p>
@@ -3853,7 +3853,7 @@
 </ul>
 <h4 id="mathematical-representation">Mathematical Representation:</h4>
 <p>In the context of backtracking algorithms, let's represent a search tree with nodes denoting different choices and edges representing the decisions made at each step. Bounding helps in deciding whether to further explore a particular path or prune it based on certain criteria.</p>
-<p>For a given node <span class="arithmatex"><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span> in the search tree, let's consider a bounding function <span class="arithmatex"><span class="MathJax_Preview">f(N)</span><script type="math/tex">f(N)</script></span> that evaluates whether the subtree starting from node <span class="arithmatex"><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span> can potentially lead to a valid solution or not. If <span class="arithmatex"><span class="MathJax_Preview">f(N)</span><script type="math/tex">f(N)</script></span> determines that the subtree cannot lead to a valid solution, we can prune that branch without further exploration, thereby bounding the search space.</p>
+<p>For a given node <span class="arithmatex">\(N\)</span> in the search tree, let's consider a bounding function <span class="arithmatex">\(f(N)\)</span> that evaluates whether the subtree starting from node <span class="arithmatex">\(N\)</span> can potentially lead to a valid solution or not. If <span class="arithmatex">\(f(N)\)</span> determines that the subtree cannot lead to a valid solution, we can prune that branch without further exploration, thereby bounding the search space.</p>
 <h4 id="code-snippet-illustrating-bounding-in-backtracking">Code Snippet illustrating Bounding in Backtracking:</h4>
 <p>Here is a simple example showcasing how bounding can be implemented using a recursive backtracking approach in Python.</p>
 <div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #006699; font-weight: bold">def</span> <span style="color: #CC00FF">is_valid_solution</span>(candidate_solution):
@@ -3969,7 +3969,9 @@
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>

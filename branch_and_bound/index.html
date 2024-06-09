@@ -12,7 +12,7 @@
         <link rel="prev" href="../backtracking/">
       
       
-        <link rel="next" href="../topological_sort/">
+        <link rel="next" href="../depth_first_search/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -1493,7 +1493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../depth_first_search.md" class="md-nav__link">
+      <a href="../depth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1513,7 +1513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../breadth_first_search.md" class="md-nav__link">
+      <a href="../breadth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1533,11 +1533,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../dijkstras_algorithm.md" class="md-nav__link">
+      <a href="../dijkstras_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dijkstras Algorithm
+    Dijkstra's Algorithm
   </span>
   
 
@@ -1553,7 +1553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman_ford_algorithm.md" class="md-nav__link">
+      <a href="../bellman_ford_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1573,11 +1573,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../a_star_algorithm.md" class="md-nav__link">
+      <a href="../a_star_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    A Star Algorithm
+    A* Algorithm
   </span>
   
 
@@ -1593,11 +1593,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskals_algorithm.md" class="md-nav__link">
+      <a href="../kruskals_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Kruskals Algorithm
+    Kruskal's Algorithm
   </span>
   
 
@@ -1613,11 +1613,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims_algorithm.md" class="md-nav__link">
+      <a href="../prims_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prims Algorithm
+    Prim's Algorithm
   </span>
   
 
@@ -1633,7 +1633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd_warshall_algorithm.md" class="md-nav__link">
+      <a href="../floyd_warshall_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1773,7 +1773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union_find.md" class="md-nav__link">
+      <a href="../union_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3453,8 +3453,8 @@
 <h4 id="dominance-in-multi-objective-optimization">Dominance in Multi-Objective Optimization</h4>
 <ul>
 <li><strong>Concept of Dominance</strong>: In multi-objective optimization, a solution A is said to dominate solution B if it performs better in at least one objective and does not perform worse in any other objectives. Mathematically, for minimization problems, solution A dominates solution B if:
-    <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">f_1(A) \leq f_1(B)</span><script type="math/tex">f_1(A) \leq f_1(B)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">f_1(A) \leq f_1(B)</span><script type="math/tex">f_1(A) \leq f_1(B)</script></span></script></span>
-    <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">f_2(A) \leq f_2(B)</span><script type="math/tex">f_2(A) \leq f_2(B)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">f_2(A) \leq f_2(B)</span><script type="math/tex">f_2(A) \leq f_2(B)</script></span></script></span></li>
+    <span class="arithmatex">\(<span class="arithmatex">\(f_1(A) \leq f_1(B)\)</span>\)</span>
+    <span class="arithmatex">\(<span class="arithmatex">\(f_2(A) \leq f_2(B)\)</span>\)</span></li>
 <li><strong>Role in Branch and Bound</strong>: Dominance helps in guiding the search process by eliminating dominated solutions and focusing on non-dominated or Pareto-optimal solutions. Branch and Bound can use dominance to prune search paths efficiently.</li>
 </ul>
 <h4 id="scalarization-techniques-and-weighted-sum-methods">Scalarization Techniques and Weighted Sum Methods</h4>
@@ -3463,9 +3463,9 @@
 <li>
 <p><strong>Weighted Sum Method</strong>:</p>
 <ul>
-<li><em>Formulation</em>: Consider a multi-objective problem with objectives <span class="arithmatex"><span class="MathJax_Preview">f_1, f_2, ..., f_m</span><script type="math/tex">f_1, f_2, ..., f_m</script></span>. The weighted sum method combines these objectives into a single scalar function:
-     <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">\text{minimize } \sum_{i=1}^{m} w_i \cdot f_i(x)</span><script type="math/tex">\text{minimize } \sum_{i=1}^{m} w_i \cdot f_i(x)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">\text{minimize } \sum_{i=1}^{m} w_i \cdot f_i(x)</span><script type="math/tex">\text{minimize } \sum_{i=1}^{m} w_i \cdot f_i(x)</script></span></script></span>
-    where <span class="arithmatex"><span class="MathJax_Preview">w_i</span><script type="math/tex">w_i</script></span> are weights assigned to each objective.</li>
+<li><em>Formulation</em>: Consider a multi-objective problem with objectives <span class="arithmatex">\(f_1, f_2, ..., f_m\)</span>. The weighted sum method combines these objectives into a single scalar function:
+     <span class="arithmatex">\(<span class="arithmatex">\(\text{minimize } \sum_{i=1}^{m} w_i \cdot f_i(x)\)</span>\)</span>
+    where <span class="arithmatex">\(w_i\)</span> are weights assigned to each objective.</li>
 <li><em>Advantages</em>: <ul>
 <li><strong>Simplification</strong>: By converting to a single-objective problem, Branch and Bound can leverage its existing framework to find Pareto-optimal solutions.</li>
 <li><strong>Efficiency</strong>: Weighted sum method allows balancing between conflicting objectives easily.</li>
@@ -3642,7 +3642,9 @@ result <span style="color: #555555">=</span> branch_and_bound(weighted_sum_objec
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>

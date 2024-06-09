@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../bloom_filters/">
+        <link rel="prev" href="../union_find/">
       
       
         <link rel="next" href="../time_complexity/">
@@ -683,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../depth_first_search.md" class="md-nav__link">
+      <a href="../depth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -703,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../breadth_first_search.md" class="md-nav__link">
+      <a href="../breadth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,11 +723,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../dijkstras_algorithm.md" class="md-nav__link">
+      <a href="../dijkstras_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dijkstras Algorithm
+    Dijkstra's Algorithm
   </span>
   
 
@@ -743,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman_ford_algorithm.md" class="md-nav__link">
+      <a href="../bellman_ford_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -763,11 +763,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../a_star_algorithm.md" class="md-nav__link">
+      <a href="../a_star_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    A Star Algorithm
+    A* Algorithm
   </span>
   
 
@@ -783,11 +783,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskals_algorithm.md" class="md-nav__link">
+      <a href="../kruskals_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Kruskals Algorithm
+    Kruskal's Algorithm
   </span>
   
 
@@ -803,11 +803,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims_algorithm.md" class="md-nav__link">
+      <a href="../prims_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prims Algorithm
+    Prim's Algorithm
   </span>
   
 
@@ -823,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd_warshall_algorithm.md" class="md-nav__link">
+      <a href="../floyd_warshall_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -963,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union_find.md" class="md-nav__link">
+      <a href="../union_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3013,14 +3013,8 @@
 <h2 id="answer_1">Answer</h2>
 <h3 id="how-memoization-impacts-time-complexity-of-algorithms">How Memoization Impacts Time Complexity of Algorithms</h3>
 <p>Memoization plays a significant role in optimizing algorithms by storing computed results to avoid redundant calculations, thereby improving overall performance. Let's delve into how it affects the time complexity of algorithms.</p>
-<div class="arithmatex">
-<div class="MathJax_Preview"> \text{Time Complexity without Memoization} = O(\text{Exponential}) </div>
-<script type="math/tex; mode=display"> \text{Time Complexity without Memoization} = O(\text{Exponential}) </script>
-</div>
-<div class="arithmatex">
-<div class="MathJax_Preview"> \text{Time Complexity with Memoization} = O(\text{Linear}) \text{ or } O(\text{Polynomial}) </div>
-<script type="math/tex; mode=display"> \text{Time Complexity with Memoization} = O(\text{Linear}) \text{ or } O(\text{Polynomial}) </script>
-</div>
+<div class="arithmatex">\[ \text{Time Complexity without Memoization} = O(\text{Exponential}) \]</div>
+<div class="arithmatex">\[ \text{Time Complexity with Memoization} = O(\text{Linear}) \text{ or } O(\text{Polynomial}) \]</div>
 <ul>
 <li><strong>Without Memoization</strong>:</li>
 <li>
@@ -3586,10 +3580,7 @@ def knapsack_recursive(values, weights, capacity, index, memo={}):
 <li>Dynamic programming involves breaking down complex problems into overlapping subproblems, which can benefit greatly from Memoization.</li>
 <li>By caching solutions to subproblems, Memoization helps in reducing the time complexity of dynamic programming solutions by ensuring that each subproblem is solved only once and its result is stored for future use.</li>
 </ul>
-<div class="arithmatex">
-<div class="MathJax_Preview">\text{Example Syntax for Memoization in Python:}</div>
-<script type="math/tex; mode=display">\text{Example Syntax for Memoization in Python:}</script>
-</div>
+<div class="arithmatex">\[\text{Example Syntax for Memoization in Python:}\]</div>
 <div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #006699; font-weight: bold">def</span> <span style="color: #CC00FF">memoization_fibonacci</span>(n, memo):
     <span style="color: #006699; font-weight: bold">if</span> n <span style="color: #000000; font-weight: bold">in</span> memo:
         <span style="color: #006699; font-weight: bold">return</span> memo[n]
@@ -3818,7 +3809,9 @@ memo <span style="color: #555555">=</span> {}
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>

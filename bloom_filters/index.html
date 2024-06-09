@@ -12,7 +12,7 @@
         <link rel="prev" href="../suffix_arrays_and_trees/">
       
       
-        <link rel="next" href="../memoization/">
+        <link rel="next" href="../union_find/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -683,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../depth_first_search.md" class="md-nav__link">
+      <a href="../depth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -703,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../breadth_first_search.md" class="md-nav__link">
+      <a href="../breadth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,11 +723,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../dijkstras_algorithm.md" class="md-nav__link">
+      <a href="../dijkstras_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dijkstras Algorithm
+    Dijkstra's Algorithm
   </span>
   
 
@@ -743,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman_ford_algorithm.md" class="md-nav__link">
+      <a href="../bellman_ford_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -763,11 +763,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../a_star_algorithm.md" class="md-nav__link">
+      <a href="../a_star_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    A Star Algorithm
+    A* Algorithm
   </span>
   
 
@@ -783,11 +783,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskals_algorithm.md" class="md-nav__link">
+      <a href="../kruskals_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Kruskals Algorithm
+    Kruskal's Algorithm
   </span>
   
 
@@ -803,11 +803,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims_algorithm.md" class="md-nav__link">
+      <a href="../prims_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prims Algorithm
+    Prim's Algorithm
   </span>
   
 
@@ -823,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd_warshall_algorithm.md" class="md-nav__link">
+      <a href="../floyd_warshall_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1893,7 +1893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union_find.md" class="md-nav__link">
+      <a href="../union_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3214,19 +3214,19 @@
 <h4 id="what-methods-can-be-used-to-calculate-the-optimal-number-of-hash-functions-for-a-given-false-positive-rate-and-dataset-size">What methods can be used to calculate the optimal number of hash functions for a given false positive rate and dataset size?</h4>
 <ul>
 <li><strong>Mathematical Approach</strong>:</li>
-<li>The optimal number of hash functions, <span class="arithmatex"><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>, can be calculated using the formula:</li>
+<li>The optimal number of hash functions, <span class="arithmatex">\(k\)</span>, can be calculated using the formula:</li>
 </ul>
 <p>$$ k = \frac{m}{n} \ln(2) $$</p>
 <p>where:
-    - <span class="arithmatex"><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span> is the number of hash functions
-    - <span class="arithmatex"><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span> is the size of the bit array
-    - <span class="arithmatex"><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> is the number of elements to be inserted
-    - <span class="arithmatex"><span class="MathJax_Preview">\ln(2)</span><script type="math/tex">\ln(2)</script></span> is the natural logarithm of 2</p>
+    - <span class="arithmatex">\(k\)</span> is the number of hash functions
+    - <span class="arithmatex">\(m\)</span> is the size of the bit array
+    - <span class="arithmatex">\(n\)</span> is the number of elements to be inserted
+    - <span class="arithmatex">\(\ln(2)\)</span> is the natural logarithm of 2</p>
 <ul>
 <li><strong>Adjustment for False Positive Rate</strong>:</li>
 <li>The number of hash functions can be fine-tuned based on the desired false positive rate to strike a balance between accuracy and memory usage.</li>
 <li><strong>Experimentation</strong>:</li>
-<li>Empirical methods involving testing various values of <span class="arithmatex"><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span> and evaluating the trade-offs can also be used to determine the optimal number of hash functions.</li>
+<li>Empirical methods involving testing various values of <span class="arithmatex">\(k\)</span> and evaluating the trade-offs can also be used to determine the optimal number of hash functions.</li>
 </ul>
 <h4 id="can-you-discuss-any-approaches-for-dynamically-resizing-the-bit-array-of-a-bloom-filter-to-adapt-to-changing-data-requirements">Can you discuss any approaches for dynamically resizing the bit array of a Bloom Filter to adapt to changing data requirements?</h4>
 <ul>
@@ -3491,13 +3491,13 @@
 <p>Bloom Filters are indispensable probabilistic data structures used to quickly check whether an element belongs to a set. To ensure optimal performance, several crucial considerations must be factored in when tuning the parameters of a Bloom Filter.</p>
 <h4 id="key-considerations-for-parameter-tuning"><strong>Key Considerations for Parameter Tuning:</strong></h4>
 <ol>
-<li><strong>False Positive Rate (<span class="arithmatex"><span class="MathJax_Preview">p</span><script type="math/tex">p</script></span>):</strong></li>
-<li>The false positive rate (<span class="arithmatex"><span class="MathJax_Preview">p</span><script type="math/tex">p</script></span>) indicates the probability that a query for an element not in the set incorrectly returns a positive result. </li>
+<li><strong>False Positive Rate (<span class="arithmatex">\(p\)</span>):</strong></li>
+<li>The false positive rate (<span class="arithmatex">\(p\)</span>) indicates the probability that a query for an element not in the set incorrectly returns a positive result. </li>
 <li>
 <p>Balancing this rate is vital, as a lower false positive rate requires a larger bit array and more hash functions.</p>
 <ul>
-<li><strong>Lower <span class="arithmatex"><span class="MathJax_Preview">p</span><script type="math/tex">p</script></span></strong>: Suitable for sensitive applications where false positives are highly undesirable.</li>
-<li><strong>Higher <span class="arithmatex"><span class="MathJax_Preview">p</span><script type="math/tex">p</script></span></strong>: May be acceptable for applications where some false positives are tolerable, trading off memory for accuracy.</li>
+<li><strong>Lower <span class="arithmatex">\(p\)</span></strong>: Suitable for sensitive applications where false positives are highly undesirable.</li>
+<li><strong>Higher <span class="arithmatex">\(p\)</span></strong>: May be acceptable for applications where some false positives are tolerable, trading off memory for accuracy.</li>
 </ul>
 </li>
 <li>
@@ -3554,7 +3554,7 @@
 <li><strong>Query Requirements</strong>:</li>
 <li>Consider the query workload (insertions, lookups) to ensure the Bloom Filter size can accommodate the expected operations efficiently.</li>
 <li><strong>Rule of Thumb</strong>:</li>
-<li>A common guideline is to set the bit array size based on the number of expected elements and the desired false positive rate using the formula <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">m = -\frac{n \ln(p)}{(\ln(2))^2}</span><script type="math/tex">m = -\frac{n \ln(p)}{(\ln(2))^2}</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">m = -\frac{n \ln(p)}{(\ln(2))^2}</span><script type="math/tex">m = -\frac{n \ln(p)}{(\ln(2))^2}</script></span></script></span>, where <span class="arithmatex"><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span> is the size of the bit array, <span class="arithmatex"><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> is the number of expected elements, and <span class="arithmatex"><span class="MathJax_Preview">p</span><script type="math/tex">p</script></span> is the false positive rate.</li>
+<li>A common guideline is to set the bit array size based on the number of expected elements and the desired false positive rate using the formula <span class="arithmatex">\(<span class="arithmatex">\(m = -\frac{n \ln(p)}{(\ln(2))^2}\)</span>\)</span>, where <span class="arithmatex">\(m\)</span> is the size of the bit array, <span class="arithmatex">\(n\)</span> is the number of expected elements, and <span class="arithmatex">\(p\)</span> is the false positive rate.</li>
 </ul>
 <p>By carefully considering these factors and tuning the parameters of a Bloom Filter accurately, its efficiency and accuracy can be maximized for various applications in database systems and network filtering.</p>
 <p>Feel free to explore these parameters and adjust them based on your specific use case and performance requirements! 🌼</p>
@@ -3788,7 +3788,9 @@
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>

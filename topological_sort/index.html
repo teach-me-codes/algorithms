@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../branch_and_bound/">
+        <link rel="prev" href="../floyd_warshall_algorithm/">
       
       
         <link rel="next" href="../tries/">
@@ -683,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../depth_first_search.md" class="md-nav__link">
+      <a href="../depth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -703,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../breadth_first_search.md" class="md-nav__link">
+      <a href="../breadth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,11 +723,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../dijkstras_algorithm.md" class="md-nav__link">
+      <a href="../dijkstras_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dijkstras Algorithm
+    Dijkstra's Algorithm
   </span>
   
 
@@ -743,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman_ford_algorithm.md" class="md-nav__link">
+      <a href="../bellman_ford_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -763,11 +763,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../a_star_algorithm.md" class="md-nav__link">
+      <a href="../a_star_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    A Star Algorithm
+    A* Algorithm
   </span>
   
 
@@ -783,11 +783,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskals_algorithm.md" class="md-nav__link">
+      <a href="../kruskals_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Kruskals Algorithm
+    Kruskal's Algorithm
   </span>
   
 
@@ -803,11 +803,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims_algorithm.md" class="md-nav__link">
+      <a href="../prims_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prims Algorithm
+    Prim's Algorithm
   </span>
   
 
@@ -823,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd_warshall_algorithm.md" class="md-nav__link">
+      <a href="../floyd_warshall_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1887,7 +1887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union_find.md" class="md-nav__link">
+      <a href="../union_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2950,12 +2950,8 @@
 <p>In a formal definition, for a DAG <strong>G = (V, E)</strong>, a topological sort is a permutation of the nodes <strong>V</strong> such that for every directed edge <strong>u -&gt; v</strong> in <strong>E</strong>, node <strong>u</strong> comes before node <strong>v</strong> in the topological ordering. Topological Sort is a fundamental concept in graph theory and is commonly used in various applications where ordering based on dependencies is crucial.</p>
 <p>The topological sort can be represented as a sequence <strong>s</strong> such that if there is an edge <strong>u -&gt; v</strong>, then <strong>u</strong> appears before <strong>v</strong> in the sequence <strong>s</strong>.</p>
 <p>Mathematically, if we have a directed acyclic graph <strong>G</strong> with nodes <strong>V</strong> and edges <strong>E</strong>, a topological sort can be represented as:</p>
-<div class="arithmatex">
-<div class="MathJax_Preview"> G = (V, E) $$
-$$ s = (v_1, v_2, ..., v_n) </div>
-<script type="math/tex; mode=display"> G = (V, E) $$
-$$ s = (v_1, v_2, ..., v_n) </script>
-</div>
+<div class="arithmatex">\[ G = (V, E) $$
+$$ s = (v_1, v_2, ..., v_n) \]</div>
 <p>Where <strong>v_i</strong> represents the <strong>i-th</strong> node in the topological sort <strong>s</strong>.</p>
 <h4 id="key-points">Key Points:</h4>
 <ul>
@@ -3085,7 +3081,7 @@ graph <span style="color: #555555">=</span> {
 </ul>
 <h4 id="can-you-discuss-the-time-complexity-of-the-topological-sort-algorithm-and-its-implications-for-large-graphs">Can you discuss the time complexity of the Topological Sort algorithm and its implications for large graphs?</h4>
 <ul>
-<li><strong>Time Complexity</strong>: The time complexity of the Topological Sort algorithm is <span class="arithmatex"><span class="MathJax_Preview">O(V + E)</span><script type="math/tex">O(V + E)</script></span>, where V is the number of vertices and E is the number of edges in the graph.</li>
+<li><strong>Time Complexity</strong>: The time complexity of the Topological Sort algorithm is <span class="arithmatex">\(O(V + E)\)</span>, where V is the number of vertices and E is the number of edges in the graph.</li>
 <li><strong>Implications</strong>: </li>
 <li>For large graphs with many nodes and edges, the time complexity directly impacts the efficiency of the sorting process.</li>
 <li>As the number of nodes and edges increases, the sorting operation may take longer, highlighting the need for efficient implementations and optimizations.</li>
@@ -3452,7 +3448,7 @@ return result
 <h4 id="understanding-topological-sort-in-the-context-of-circular-dependencies"><strong>Understanding Topological Sort in the Context of Circular Dependencies:</strong></h4>
 <ul>
 <li>
-<p><strong>Topological Sort Definition</strong>: Topological Sort orders the nodes of a DAG in such a way that for every directed edge from node <span class="arithmatex"><span class="MathJax_Preview">u</span><script type="math/tex">u</script></span> to node <span class="arithmatex"><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span>, node <span class="arithmatex"><span class="MathJax_Preview">u</span><script type="math/tex">u</script></span> comes before node <span class="arithmatex"><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> in the ordering.</p>
+<p><strong>Topological Sort Definition</strong>: Topological Sort orders the nodes of a DAG in such a way that for every directed edge from node <span class="arithmatex">\(u\)</span> to node <span class="arithmatex">\(v\)</span>, node <span class="arithmatex">\(u\)</span> comes before node <span class="arithmatex">\(v\)</span> in the ordering.</p>
 </li>
 <li>
 <p><strong>Detection of Circular Dependencies</strong>: By applying Topological Sort on the dependency graph of a software system, any presence of cycles (indicative of circular dependencies) will prevent a valid topological ordering from being produced. This forms the basis for detecting circular dependencies.</p>
@@ -3613,7 +3609,7 @@ return result
 <h4 id="how-does-the-algorithmic-complexity-of-topological-sort-compare-to-the-generic-concept-of-topological-ordering-in-terms-of-computational-efficiency">How does the algorithmic complexity of Topological Sort compare to the generic concept of topological ordering in terms of computational efficiency?</h4>
 <ul>
 <li><strong>Algorithmic Complexity</strong>:</li>
-<li><strong>Topological Sort</strong>: The algorithmic complexity of Topological Sort is linear, typically <span class="arithmatex"><span class="MathJax_Preview">O(V + E)</span><script type="math/tex">O(V + E)</script></span>, where <span class="arithmatex"><span class="MathJax_Preview">V</span><script type="math/tex">V</script></span> is the number of vertices and <span class="arithmatex"><span class="MathJax_Preview">E</span><script type="math/tex">E</script></span> is the number of edges in the graph.</li>
+<li><strong>Topological Sort</strong>: The algorithmic complexity of Topological Sort is linear, typically <span class="arithmatex">\(O(V + E)\)</span>, where <span class="arithmatex">\(V\)</span> is the number of vertices and <span class="arithmatex">\(E\)</span> is the number of edges in the graph.</li>
 <li><strong>Topological Ordering</strong>: The generic concept of topological ordering does not represent a specific computational algorithm; therefore, its complexity is not defined.</li>
 </ul>
 <h4 id="can-you-explain-how-the-definition-of-a-topological-order-extends-to-various-graph-types-beyond-dags-and-how-this-impacts-the-feasibility-of-topological-sort-in-those-cases">Can you explain how the definition of a topological order extends to various graph types beyond DAGs, and how this impacts the feasibility of Topological Sort in those cases?</h4>
@@ -3778,7 +3774,9 @@ return result
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>

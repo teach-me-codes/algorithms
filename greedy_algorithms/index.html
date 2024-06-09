@@ -1583,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../depth_first_search.md" class="md-nav__link">
+      <a href="../depth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1603,7 +1603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../breadth_first_search.md" class="md-nav__link">
+      <a href="../breadth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1623,11 +1623,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../dijkstras_algorithm.md" class="md-nav__link">
+      <a href="../dijkstras_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dijkstras Algorithm
+    Dijkstra's Algorithm
   </span>
   
 
@@ -1643,7 +1643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman_ford_algorithm.md" class="md-nav__link">
+      <a href="../bellman_ford_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1663,11 +1663,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../a_star_algorithm.md" class="md-nav__link">
+      <a href="../a_star_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    A Star Algorithm
+    A* Algorithm
   </span>
   
 
@@ -1683,11 +1683,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskals_algorithm.md" class="md-nav__link">
+      <a href="../kruskals_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Kruskals Algorithm
+    Kruskal's Algorithm
   </span>
   
 
@@ -1703,11 +1703,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims_algorithm.md" class="md-nav__link">
+      <a href="../prims_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prims Algorithm
+    Prim's Algorithm
   </span>
   
 
@@ -1723,7 +1723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd_warshall_algorithm.md" class="md-nav__link">
+      <a href="../floyd_warshall_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1863,7 +1863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union_find.md" class="md-nav__link">
+      <a href="../union_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2949,12 +2949,12 @@
 <p>The coin change problem is a classic example that illustrates the application of Greedy Algorithms. In this scenario, the task is to determine the minimum number of coins needed to make a certain amount of change. The Greedy Algorithm's strategy is to select the largest denomination of coins possible at each step until the desired total is reached, without exploring all possible combinations.</p>
 <p>Mathematically, the Greedy Algorithm for the coin change problem can be outlined as follows:</p>
 <p>Let:
-- <span class="arithmatex"><span class="MathJax_Preview">C = \lbrace c_1, c_2, ..., c_n \rbrace</span><script type="math/tex">C = \lbrace c_1, c_2, ..., c_n \rbrace</script></span> be the set of available coin denominations.
-- <span class="arithmatex"><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span> be the total amount of change required.</p>
+- <span class="arithmatex">\(C = \lbrace c_1, c_2, ..., c_n \rbrace\)</span> be the set of available coin denominations.
+- <span class="arithmatex">\(M\)</span> be the total amount of change required.</p>
 <ol>
 <li>Initialize an empty list to store the selected coins.</li>
 <li>Sort the coin denominations in descending order.</li>
-<li>Iterate through each coin denomination <span class="arithmatex"><span class="MathJax_Preview">c_i</span><script type="math/tex">c_i</script></span>:<ul>
+<li>Iterate through each coin denomination <span class="arithmatex">\(c_i\)</span>:<ul>
 <li>While $ M \geq c_i $:<ul>
 <li>Add $ c_i $ to the selected coins list.</li>
 <li>Subtract $ c_i $ from $ M $.</li>
@@ -2975,7 +2975,7 @@
 </li>
 </ul>
 <h4 id="can-you-discuss-any-variations-of-the-coin-change-problem-where-greedy-algorithms-may-not-yield-the-best-result">Can you discuss any variations of the coin change problem where Greedy Algorithms may not yield the best result?</h4>
-<p>One variation where Greedy Algorithms might not yield the best result is when using coins with arbitrary denominations. For instance, if the coin denominations are unrelated (e.g., <span class="arithmatex"><span class="MathJax_Preview">2, 3, 7, 11</span><script type="math/tex">2, 3, 7, 11</script></span>), the Greedy Algorithm may struggle to find the optimal solution since the best combination may involve various coin values, not just the largest at each step.</p>
+<p>One variation where Greedy Algorithms might not yield the best result is when using coins with arbitrary denominations. For instance, if the coin denominations are unrelated (e.g., <span class="arithmatex">\(2, 3, 7, 11\)</span>), the Greedy Algorithm may struggle to find the optimal solution since the best combination may involve various coin values, not just the largest at each step.</p>
 <h4 id="what-are-the-advantages-of-using-a-greedy-approach-in-solving-the-coin-change-problem-compared-to-other-algorithmic-strategies">What are the advantages of using a Greedy approach in solving the coin change problem compared to other algorithmic strategies?</h4>
 <ul>
 <li>
@@ -3014,22 +3014,15 @@
 <li>Sort the edges of the graph in non-decreasing order of their weights.</li>
 <li>Iterate over the sorted edges and add each edge to the MST if it does not create a cycle.</li>
 </ol>
-<div class="arithmatex">
-<div class="MathJax_Preview">
+<div class="arithmatex">\[
 \text{MST} = \text{Kruskal}(G) \\
 G \text{ : Input Graph} \\
 \text{E} = \{e_1, e_2, ..., e_m\} \text{ : Sorted edges by weight}
-</div>
-<script type="math/tex; mode=display">
-\text{MST} = \text{Kruskal}(G) \\
-G \text{ : Input Graph} \\
-\text{E} = \{e_1, e_2, ..., e_m\} \text{ : Sorted edges by weight}
-</script>
-</div>
+\]</div>
 <ol>
 <li><strong>Add Edge if No Cycle:</strong></li>
 <li>
-<p>Check if adding the edge <span class="arithmatex"><span class="MathJax_Preview">e_i</span><script type="math/tex">e_i</script></span> to the MST creates a cycle using disjoint-set data structures.</p>
+<p>Check if adding the edge <span class="arithmatex">\(e_i\)</span> to the MST creates a cycle using disjoint-set data structures.</p>
 </li>
 <li>
 <p><strong>Terminate:</strong></p>
@@ -3622,7 +3615,9 @@ G \text{ : Input Graph} \\
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>

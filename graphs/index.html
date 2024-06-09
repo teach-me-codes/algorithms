@@ -1508,7 +1508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../depth_first_search.md" class="md-nav__link">
+      <a href="../depth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1528,7 +1528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../breadth_first_search.md" class="md-nav__link">
+      <a href="../breadth_first_search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1548,11 +1548,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../dijkstras_algorithm.md" class="md-nav__link">
+      <a href="../dijkstras_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dijkstras Algorithm
+    Dijkstra's Algorithm
   </span>
   
 
@@ -1568,7 +1568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman_ford_algorithm.md" class="md-nav__link">
+      <a href="../bellman_ford_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1588,11 +1588,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../a_star_algorithm.md" class="md-nav__link">
+      <a href="../a_star_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    A Star Algorithm
+    A* Algorithm
   </span>
   
 
@@ -1608,11 +1608,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskals_algorithm.md" class="md-nav__link">
+      <a href="../kruskals_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Kruskals Algorithm
+    Kruskal's Algorithm
   </span>
   
 
@@ -1628,11 +1628,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims_algorithm.md" class="md-nav__link">
+      <a href="../prims_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prims Algorithm
+    Prim's Algorithm
   </span>
   
 
@@ -1648,7 +1648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd_warshall_algorithm.md" class="md-nav__link">
+      <a href="../floyd_warshall_algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1788,7 +1788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../union_find.md" class="md-nav__link">
+      <a href="../union_find/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2791,22 +2791,13 @@
 <li>For an undirected graph, the adjacency matrix is symmetric, with a value of 1 at position (i, j) indicating an edge between nodes i and j.</li>
 <li>
 <p>Example of a simple adjacency matrix for an undirected graph with 3 nodes:</p>
-<div class="arithmatex">
-<div class="MathJax_Preview"> 
+<div class="arithmatex">\[ 
 \begin{pmatrix}
 0 &amp; 1 &amp; 1 \\
 1 &amp; 0 &amp; 0 \\
 1 &amp; 0 &amp; 0
 \end{pmatrix}
-</div>
-<script type="math/tex; mode=display"> 
-\begin{pmatrix}
-0 & 1 & 1 \\
-1 & 0 & 0 \\
-1 & 0 & 0
-\end{pmatrix}
-</script>
-</div>
+\]</div>
 </li>
 <li>
 <p><strong>Adjacency List</strong>:</p>
@@ -3162,28 +3153,18 @@ return stack[::-1]
 <li>It works on graphs with non-negative edge weights and guarantees the shortest path from a single source vertex to all other vertices.</li>
 <li>The algorithm maintains a priority queue (min-heap) to greedily select the vertex with the shortest distance to the source at each step.</li>
 </ol>
-<div class="arithmatex">
-<div class="MathJax_Preview">
+<div class="arithmatex">\[
 \text{Shortest Path: } \delta(s, v) = \text{min}(\delta(s, u) + w(u, v))
-</div>
-<script type="math/tex; mode=display">
-\text{Shortest Path: } \delta(s, v) = \text{min}(\delta(s, u) + w(u, v))
-</script>
-</div>
+\]</div>
 <ol>
 <li><strong>A* Search Algorithm</strong>:</li>
 <li>A* is a popular informed search algorithm that combines the advantages of Dijkstra's algorithm and heuristic search.</li>
 <li>It uses an admissible heuristic function to guide the search towards the goal, making it efficient for pathfinding.</li>
 <li>A* is suitable for graphs with varying edge costs and is often used in scenarios where the goal is known in advance.</li>
 </ol>
-<div class="arithmatex">
-<div class="MathJax_Preview">
+<div class="arithmatex">\[
 f(n) = g(n) + h(n)
-</div>
-<script type="math/tex; mode=display">
-f(n) = g(n) + h(n)
-</script>
-</div>
+\]</div>
 <h3 id="follow-up-questions_4">Follow-up Questions:</h3>
 <h4 id="how-does-the-choice-of-pathfinding-algorithm-depend-on-the-characteristics-of-the-graph-such-as-density-and-edge-weights">How does the choice of pathfinding algorithm depend on the characteristics of the graph, such as density and edge weights?</h4>
 <ul>
@@ -3499,7 +3480,7 @@ f(n) = g(n) + h(n)
 <p>Graph coloring is a fundamental concept in graph theory that assigns colors to vertices of a graph in such a way that no two adjacent vertices share the same color. This concept has extensive applications in various fields, including scheduling problems, register allocation in compilers, map coloring, and optimization tasks. Graph coloring algorithms play a crucial role in solving these problems efficiently. Let's explore the key aspects:</p>
 <ul>
 <li><strong>Graph Coloring Concept:</strong></li>
-<li>A graph <span class="arithmatex"><span class="MathJax_Preview"> G(V, E) </span><script type="math/tex"> G(V, E) </script></span> consists of vertices <span class="arithmatex"><span class="MathJax_Preview"> V </span><script type="math/tex"> V </script></span> and edges <span class="arithmatex"><span class="MathJax_Preview"> E </span><script type="math/tex"> E </script></span> connecting these vertices.</li>
+<li>A graph <span class="arithmatex">\( G(V, E) \)</span> consists of vertices <span class="arithmatex">\( V \)</span> and edges <span class="arithmatex">\( E \)</span> connecting these vertices.</li>
 <li>In graph coloring, each vertex is assigned a color from a set of available colors, ensuring adjacent vertices have different colors.</li>
 <li>
 <p>Types include:</p>
@@ -3756,7 +3737,9 @@ f(n) = g(n) + h(n)
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>
