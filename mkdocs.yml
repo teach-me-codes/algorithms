@@ -1,12 +1,61 @@
-site_name: Data Structure and Algorithms
+site_name: Learning Datastructures and Algorithms
+site_description: A comprehensive guide to learning data structures and algorithms.
+site_author: Teach Me Codes
+site_url: https://learning.teachme.codes
+site_language: en
+
+repo_url: https://github.com/teach-me-codes/algorithms
 
 extra_javascript:
   - mathjax-config.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
 
+
+
 markdown_extensions:
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  
   - codehilite:
       linenums: false
       guess_lang: false
@@ -14,8 +63,13 @@ markdown_extensions:
       noclasses: true
       pygments_style: manni
 
+
+
+
+  
 theme:
   name: 'material'
+  #custom_dir: overrides
   highlightjs: true
   hljs_languages: [python]
   include_homepage_in_sidebar: true
@@ -24,15 +78,108 @@ theme:
   titles_only: false
   sticky_navigation: true
   collapse_navigation: true
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+# Plugins
+  plugins:
+    - blog
+    - search:
+        separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+    - minify:
+        minify_html: true
+  
+   
+ 
+#extra_css:
+#  - extra.css
 
-extra_css:
-  - extra.css
 
 extra:
   analytics:
     provider: google
-    property: UA-156178967-1
-
+    property: G-ECS7B3X8JM
+  feedback:
+    title: Was this page helpful?
+    ratings:
+      - icon: material/emoticon-happy-outline
+        name: This page was helpful
+        data: 1
+        note: >-
+          Thanks for your feedback!
+      - icon: material/emoticon-sad-outline
+        name: This page could be improved
+        data: 0
+        note: >- 
+          Thanks for your feedback! Help us improve this page by
+          using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://teach-me-codes.github.io
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/TeachMeCodes
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/teachmecodes
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/teach-me-codes
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@teach-me-codes
 
 
 nav:
@@ -80,4 +227,3 @@ nav:
 - Space Complexity: space_complexity.md
 - Amortized Analysis: amortized_analysis.md
 - MapReduce: mapreduce.md
-
