@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A comprehensive guide to learning data structures and algorithms.">
       
+      
+        <meta name="author" content="Teach Me Codes">
+      
+      
+        <link rel="canonical" href="https://learning.teachme.codes/dictionaries/">
       
       
         <link rel="prev" href="../sets/">
@@ -15,16 +21,19 @@
         <link rel="next" href="../strings/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../assets/logo.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
     
     
       
-        <title>Dictionaries - Data Structure and Algorithms</title>
+        <title>Dictionaries - Learning Datastructures and Algorithms</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -43,8 +52,6 @@
       
     
     
-      <link rel="stylesheet" href="../extra.css">
-    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -54,9 +61,9 @@
   
   
 
-<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","UA-156178967-1"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","UA-156178967-1",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=UA-156178967-1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ECS7B3X8JM"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ECS7B3X8JM",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ECS7B3X8JM",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
   
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
   
 
     
@@ -65,7 +72,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -90,10 +104,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Data Structure and Algorithms" class="md-header__button md-logo" aria-label="Data Structure and Algorithms" data-md-component="logo">
+    <a href=".." title="Learning Datastructures and Algorithms" class="md-header__button md-logo" aria-label="Learning Datastructures and Algorithms" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +117,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Data Structure and Algorithms
+            Learning Datastructures and Algorithms
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -116,6 +129,42 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -139,11 +188,18 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -159,6 +215,18 @@
   </div>
 </div>
     
+    
+      <div class="md-header__source">
+        <a href="https://github.com/teach-me-codes/algorithms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -185,14 +253,25 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Data Structure and Algorithms" class="md-nav__button md-logo" aria-label="Data Structure and Algorithms" data-md-component="logo">
+    <a href=".." title="Learning Datastructures and Algorithms" class="md-nav__button md-logo" aria-label="Learning Datastructures and Algorithms" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../assets/logo.png" alt="logo">
 
     </a>
-    Data Structure and Algorithms
+    Learning Datastructures and Algorithms
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/teach-me-codes/algorithms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -2632,6 +2711,22 @@
                 
                   
 
+  
+    <a href="https://github.com/teach-me-codes/algorithms/edit/master/docs/dictionaries.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/teach-me-codes/algorithms/raw/master/docs/dictionaries.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
 
   <h1>Dictionaries</h1>
 
@@ -2654,15 +2749,14 @@
 <h3 id="what-is-a-dictionary-in-the-context-of-basic-data-structures">What is a Dictionary in the context of basic data structures?</h3>
 <p>In Python, a <strong>Dictionary</strong> is a versatile data structure that stores elements as <strong>key-value pairs</strong>. It provides an efficient way to associate unique keys with corresponding values, enabling rapid retrieval and storage of data. Dictionaries are implemented using hash tables, which allow for fast lookups based on the keys. The keys in a dictionary are unique and immutable, while the values can be of any data type, including lists, tuples, other dictionaries, or even functions.</p>
 <p>A dictionary in Python can be defined using curly braces <code>{}</code> and specifying the key-value pairs within it. Here is an example of a dictionary representing a person's information:</p>
-<div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #0099FF; font-style: italic"># Example of a Python Dictionary</span>
-person <span style="color: #555555">=</span> {
-    <span style="color: #CC3300">&#39;name&#39;</span>: <span style="color: #CC3300">&#39;Alice&#39;</span>,
-    <span style="color: #CC3300">&#39;age&#39;</span>: <span style="color: #FF6600">30</span>,
-    <span style="color: #CC3300">&#39;occupation&#39;</span>: <span style="color: #CC3300">&#39;Engineer&#39;</span>
-}
-<span style="color: #336666">print</span>(person)
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Example of a Python Dictionary</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">person</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="s1">&#39;occupation&#39;</span><span class="p">:</span> <span class="s1">&#39;Engineer&#39;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
+</span></code></pre></div>
 <h3 id="how-does-the-key-value-pair-structure-differentiate-a-dictionary-from-other-data-structures">How does the key-value pair structure differentiate a Dictionary from other data structures?</h3>
 <ul>
 <li>
@@ -2749,61 +2843,57 @@ person <span style="color: #555555">=</span> {
 <li>To access a value in a dictionary, you can use the key within square brackets (<code>[]</code>) after the dictionary variable.</li>
 <li>Here is an example of how to access the value corresponding to a specific key in a dictionary in Python:</li>
 </ol>
-<div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #0099FF; font-style: italic"># Creating a dictionary</span>
-my_dict <span style="color: #555555">=</span> {<span style="color: #CC3300">&#39;A&#39;</span>: <span style="color: #FF6600">1</span>, <span style="color: #CC3300">&#39;B&#39;</span>: <span style="color: #FF6600">2</span>, <span style="color: #CC3300">&#39;C&#39;</span>: <span style="color: #FF6600">3</span>}
-
-<span style="color: #0099FF; font-style: italic"># Accessing value by key</span>
-value_of_A <span style="color: #555555">=</span> my_dict[<span style="color: #CC3300">&#39;A&#39;</span>]
-<span style="color: #336666">print</span>(value_of_A)  <span style="color: #0099FF; font-style: italic"># Output: 1</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Creating a dictionary</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Accessing value by key</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">value_of_A</span> <span class="o">=</span> <span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">value_of_A</span><span class="p">)</span>  <span class="c1"># Output: 1</span>
+</span></code></pre></div>
 <ol>
 <li><strong>Accessing Keys and Values Using Methods:</strong></li>
 <li>Python provides methods like <code>keys()</code>, <code>values()</code>, and <code>items()</code> to access keys, values, and key-value pairs in a dictionary.</li>
 </ol>
 <p>Example of using dictionary methods:</p>
-<div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #0099FF; font-style: italic"># Creating a dictionary</span>
-my_dict <span style="color: #555555">=</span> {<span style="color: #CC3300">&#39;A&#39;</span>: <span style="color: #FF6600">1</span>, <span style="color: #CC3300">&#39;B&#39;</span>: <span style="color: #FF6600">2</span>, <span style="color: #CC3300">&#39;C&#39;</span>: <span style="color: #FF6600">3</span>}
-
-<span style="color: #0099FF; font-style: italic"># Accessing keys</span>
-keys <span style="color: #555555">=</span> my_dict<span style="color: #555555">.</span>keys()
-<span style="color: #336666">print</span>(keys)  <span style="color: #0099FF; font-style: italic"># Output: dict_keys([&#39;A&#39;, &#39;B&#39;, &#39;C&#39;])</span>
-
-<span style="color: #0099FF; font-style: italic"># Accessing values</span>
-values <span style="color: #555555">=</span> my_dict<span style="color: #555555">.</span>values()
-<span style="color: #336666">print</span>(values)  <span style="color: #0099FF; font-style: italic"># Output: dict_values([1, 2, 3])</span>
-
-<span style="color: #0099FF; font-style: italic"># Accessing key-value pairs</span>
-items <span style="color: #555555">=</span> my_dict<span style="color: #555555">.</span>items()
-<span style="color: #336666">print</span>(items)  <span style="color: #0099FF; font-style: italic"># Output: dict_items([(&#39;A&#39;, 1), (&#39;B&#39;, 2), (&#39;C&#39;, 3)])</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Creating a dictionary</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Accessing keys</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">keys</span> <span class="o">=</span> <span class="n">my_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span>  <span class="c1"># Output: dict_keys([&#39;A&#39;, &#39;B&#39;, &#39;C&#39;])</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># Accessing values</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">values</span> <span class="o">=</span> <span class="n">my_dict</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>  <span class="c1"># Output: dict_values([1, 2, 3])</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1"># Accessing key-value pairs</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="n">items</span> <span class="o">=</span> <span class="n">my_dict</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>  <span class="c1"># Output: dict_items([(&#39;A&#39;, 1), (&#39;B&#39;, 2), (&#39;C&#39;, 3)])</span>
+</span></code></pre></div>
 <h3 id="what-happens-if-a-key-that-does-not-exist-is-used-for-retrieval-in-a-dictionary">What happens if a key that does not exist is used for retrieval in a Dictionary?</h3>
 <p>When an attempt is made to access a key that does not exist in a dictionary, Python raises a <code>KeyError</code>. This error indicates that the specified key is not found in the dictionary. To handle this situation and avoid errors, it is recommended to check for the existence of a key before attempting to retrieve its corresponding value.</p>
 <p>Example of handling a non-existent key:</p>
-<div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code>my_dict <span style="color: #555555">=</span> {<span style="color: #CC3300">&#39;A&#39;</span>: <span style="color: #FF6600">1</span>, <span style="color: #CC3300">&#39;B&#39;</span>: <span style="color: #FF6600">2</span>, <span style="color: #CC3300">&#39;C&#39;</span>: <span style="color: #FF6600">3</span>}
-
-<span style="color: #0099FF; font-style: italic"># Trying to access a non-existent key</span>
-<span style="color: #006699; font-weight: bold">try</span>:
-    value_of_D <span style="color: #555555">=</span> my_dict[<span style="color: #CC3300">&#39;D&#39;</span>]
-<span style="color: #006699; font-weight: bold">except</span> <span style="color: #CC0000; font-weight: bold">KeyError</span>:
-    <span style="color: #336666">print</span>(<span style="color: #CC3300">&quot;Key &#39;D&#39; does not exist in the dictionary.&quot;</span>)
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># Trying to access a non-existent key</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">value_of_D</span> <span class="o">=</span> <span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">]</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Key &#39;D&#39; does not exist in the dictionary.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
 <h3 id="can-keys-in-a-dictionary-be-of-any-data-type-or-are-there-restrictions-on-the-key-values">Can keys in a Dictionary be of any data type, or are there restrictions on the key values?</h3>
 <p>In Python dictionaries, keys can be of any immutable data type. This includes data types like integers, strings, tuples, and even custom objects (as long as they are immutable). Mutable data types like lists cannot be used as keys in dictionaries since they are not hashable. The key requirement for dictionary keys is that they need to be hashable, which ensures that they can be used to access values efficiently in the dictionary.</p>
 <h3 id="how-can-the-in-keyword-be-used-to-check-for-the-presence-of-a-key-in-a-dictionary">How can the "in" keyword be used to check for the presence of a key in a Dictionary?</h3>
 <p>The <code>in</code> keyword in Python can be used to check for the presence of a key in a dictionary. It returns <code>True</code> if the key exists in the dictionary and <code>False</code> otherwise.</p>
 <p>Example of using the <code>in</code> keyword for key presence check:</p>
-<div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code>my_dict <span style="color: #555555">=</span> {<span style="color: #CC3300">&#39;A&#39;</span>: <span style="color: #FF6600">1</span>, <span style="color: #CC3300">&#39;B&#39;</span>: <span style="color: #FF6600">2</span>, <span style="color: #CC3300">&#39;C&#39;</span>: <span style="color: #FF6600">3</span>}
-
-<span style="color: #0099FF; font-style: italic"># Checking for key &#39;B&#39; in the dictionary</span>
-<span style="color: #006699; font-weight: bold">if</span> <span style="color: #CC3300">&#39;B&#39;</span> <span style="color: #000000; font-weight: bold">in</span> my_dict:
-    <span style="color: #336666">print</span>(<span style="color: #CC3300">&quot;&#39;B&#39; key is present in the dictionary.&quot;</span>)
-<span style="color: #006699; font-weight: bold">else</span>:
-    <span style="color: #336666">print</span>(<span style="color: #CC3300">&quot;&#39;B&#39; key is not present in the dictionary.&quot;</span>)
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Checking for key &#39;B&#39; in the dictionary</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">if</span> <span class="s1">&#39;B&#39;</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="p">:</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;B&#39; key is present in the dictionary.&quot;</span><span class="p">)</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;B&#39; key is not present in the dictionary.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
 <p>Overall, dictionaries in Python provide a flexible and efficient way to store and retrieve data through key-value pairs, allowing for quick access to values using keys. The ability to handle various data types as keys and the simplicity of key-checking operations make dictionaries a versatile data structure for many programming tasks.</p>
 <h2 id="question_2">Question</h2>
 <p><strong>Main question</strong>: What are some common operations that can be performed on Dictionaries?</p>
@@ -2827,56 +2917,56 @@ items <span style="color: #555555">=</span> my_dict<span style="color: #555555">
 <li><strong>Adding New Key-Value Pairs</strong>:</li>
 <li>
 <p>To add a new key-value pair to a dictionary, you can simply assign a value to a new key:
-     <code>python
-     my_dict = {'a': 1, 'b': 2}
-     my_dict['c'] = 3</code></p>
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+</span></code></pre></div></p>
 </li>
 <li>
 <p><strong>Updating Existing Values</strong>:</p>
 </li>
 <li>
 <p>If you want to update the value for an existing key in a dictionary, you can reassign a new value to that key:
-     <code>python
-     my_dict = {'a': 1, 'b': 2}
-     my_dict['b'] = 20</code></p>
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">20</span>
+</span></code></pre></div></p>
 </li>
 <li>
 <p><strong>Deleting Key-Value Pairs</strong>:</p>
 </li>
 <li>
 <p>To remove a key-value pair from a dictionary, you can use the <code>del</code> keyword or the <code>pop()</code> method:
-     <code>python
-     my_dict = {'a': 1, 'b': 2}
-     del my_dict['a']
-     # or
-     my_dict.pop('b')</code></p>
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">del</span> <span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># or</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">my_dict</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+</span></code></pre></div></p>
 </li>
 <li>
 <p><strong>Iterating Over Keys or Values</strong>:</p>
 </li>
-<li>
-<p>You can iterate over the keys, values, or key-value pairs in a dictionary using loops:
-     ```python
-     my_dict = {'a': 1, 'b': 2}</p>
-<p># Iterate over keys
- for key in my_dict:
-     print(key)</p>
-<p># Iterate over values
- for value in my_dict.values():
-     print(value)</p>
-<p># Iterate over key-value pairs
- for key, value in my_dict.items():
-     print(key, value)
- ```</p>
-</li>
+<li>You can iterate over the keys, values, or key-value pairs in a dictionary using loops:
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="c1"># Iterate over keys</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="p">:</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># Iterate over values</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="c1"># Iterate over key-value pairs</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</span></code></pre></div></li>
 </ol>
 <h3 id="follow-up-questions">Follow-up Questions:</h3>
 <h4 id="how-can-values-be-modified-or-updated-for-a-specific-key-in-a-dictionary">How can values be modified or updated for a specific key in a Dictionary?</h4>
 <ul>
 <li>To modify or update the value for a specific key in a dictionary, you can directly assign a new value to that key:
-  <code>python
-  my_dict = {'a': 1, 'b': 2}
-  my_dict['a'] = 10</code></li>
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+</span></code></pre></div></li>
 </ul>
 <h4 id="is-it-possible-to-have-duplicate-keys-in-a-dictionary-and-how-are-they-handled">Is it possible to have duplicate keys in a Dictionary, and how are they handled?</h4>
 <ul>
@@ -2910,14 +3000,13 @@ items <span style="color: #555555">=</span> my_dict<span style="color: #555555">
 <h3 id="can-a-dictionary-have-nested-or-complex-structures-as-values">Can a Dictionary have nested or complex structures as values?</h3>
 <p>In Python, dictionaries can indeed contain nested or complex structures as values. This flexibility allows for storing a wide range of data types, including lists, tuples, other dictionaries, or even a combination of these. This feature makes dictionaries in Python highly versatile for handling and organizing data efficiently.</p>
 <h4 id="how-to-create-a-dictionary-with-nested-structures"><strong>How to Create a Dictionary with Nested Structures:</strong></h4>
-<div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #0099FF; font-style: italic"># Example of a dictionary with nested structures</span>
-nested_dict <span style="color: #555555">=</span> {
-    <span style="color: #CC3300">&#39;key1&#39;</span>: [<span style="color: #FF6600">1</span>, <span style="color: #FF6600">2</span>, <span style="color: #FF6600">3</span>],
-    <span style="color: #CC3300">&#39;key2&#39;</span>: {<span style="color: #CC3300">&#39;inner_key&#39;</span>: <span style="color: #CC3300">&#39;value&#39;</span>},
-    <span style="color: #CC3300">&#39;key3&#39;</span>: (<span style="color: #CC3300">&#39;a&#39;</span>, <span style="color: #CC3300">&#39;b&#39;</span>, <span style="color: #CC3300">&#39;c&#39;</span>)
-}
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Example of a dictionary with nested structures</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">nested_dict</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="s1">&#39;key1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="s1">&#39;key2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;inner_key&#39;</span><span class="p">:</span> <span class="s1">&#39;value&#39;</span><span class="p">},</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="s1">&#39;key3&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="p">}</span>
+</span></code></pre></div>
 <h4 id="accessing-and-manipulating-nested-structures-in-a-dictionary"><strong>Accessing and Manipulating Nested Structures in a Dictionary:</strong></h4>
 <ul>
 <li>To access values within nested structures, you can use multiple keys to traverse through the layers of nesting.</li>
@@ -2980,19 +3069,18 @@ nested_dict <span style="color: #555555">=</span> {
 <p><strong>Open Addressing</strong>: Open addressing is another technique where Python searches for the next open slot in the hash table when a collision occurs. Different probing strategies like linear probing (checking successive slots until an empty slot is found) or quadratic probing (checking slots with increasing gaps) can be used to resolve collisions in open addressing.</p>
 </li>
 </ol>
-<p><strong>Example of Key Collision Handling with Chaining:</strong></p>
-<div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #0099FF; font-style: italic"># Creating a Dictionary with Chaining Collisions</span>
-hash_table <span style="color: #555555">=</span> {}
-hash_table[<span style="color: #FF6600">5</span>] <span style="color: #555555">=</span> <span style="color: #CC3300">&#39;apple&#39;</span>
-hash_table[<span style="color: #FF6600">10</span>] <span style="color: #555555">=</span> <span style="color: #CC3300">&#39;banana&#39;</span>
-hash_table[<span style="color: #FF6600">15</span>] <span style="color: #555555">=</span> <span style="color: #CC3300">&#39;cherry&#39;</span>
-hash_table[<span style="color: #FF6600">20</span>] <span style="color: #555555">=</span> <span style="color: #CC3300">&#39;date&#39;</span>
-hash_table[<span style="color: #FF6600">25</span>] <span style="color: #555555">=</span> <span style="color: #CC3300">&#39;elderberry&#39;</span>
-
-<span style="color: #0099FF; font-style: italic"># Adding a new key that collides with the existing keys</span>
-hash_table[<span style="color: #FF6600">5</span>] <span style="color: #555555">=</span> <span style="color: #CC3300">&#39;apricot&#39;</span>
-</code></pre></div>
-
+<p><strong>Example of Key Collision Handling with Chaining:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Creating a Dictionary with Chaining Collisions</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">hash_table</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">hash_table</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;apple&#39;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">hash_table</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;banana&#39;</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">hash_table</span><span class="p">[</span><span class="mi">15</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;cherry&#39;</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="n">hash_table</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;date&#39;</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="n">hash_table</span><span class="p">[</span><span class="mi">25</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;elderberry&#39;</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="c1"># Adding a new key that collides with the existing keys</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="n">hash_table</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;apricot&#39;</span>
+</span></code></pre></div></p>
 <h3 id="follow-up-questions_2">Follow-up Questions:</h3>
 <h4 id="what-impact-do-key-collisions-have-on-the-performance-and-efficiency-of-a-dictionary">What Impact do Key Collisions Have on the Performance and Efficiency of a Dictionary?</h4>
 <ul>
@@ -3092,18 +3180,17 @@ hash_table[<span style="color: #FF6600">5</span>] <span style="color: #555555">=
 <p><strong>Data Integrity Concerns</strong>: Modifying a mutable object used as a key can potentially corrupt the integrity of the dictionary. If the key changes its state, the relationship between the key and its associated value would be lost, leading to inconsistency in data retrieval.</p>
 </li>
 </ul>
-<p>To demonstrate the implications of using a mutable object like a list as a key in a dictionary:</p>
-<div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #0099FF; font-style: italic"># Example of using a list (mutable) as a key in a dictionary</span>
-mutable_key <span style="color: #555555">=</span> [<span style="color: #FF6600">1</span>, <span style="color: #FF6600">2</span>, <span style="color: #FF6600">3</span>]
-data_dict <span style="color: #555555">=</span> {mutable_key: <span style="color: #CC3300">&#39;value&#39;</span>}
-
-<span style="color: #0099FF; font-style: italic"># Attempt to modify the list key after insertion</span>
-mutable_key<span style="color: #555555">.</span>append(<span style="color: #FF6600">4</span>)
-
-<span style="color: #0099FF; font-style: italic"># Access value using the modified key</span>
-<span style="color: #336666">print</span>(data_dict<span style="color: #555555">.</span>get(mutable_key))  <span style="color: #0099FF; font-style: italic"># Output: None - key not found due to hashing issues</span>
-</code></pre></div>
-
+<p>To demonstrate the implications of using a mutable object like a list as a key in a dictionary:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Example of using a list (mutable) as a key in a dictionary</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">mutable_key</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">data_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">mutable_key</span><span class="p">:</span> <span class="s1">&#39;value&#39;</span><span class="p">}</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="c1"># Attempt to modify the list key after insertion</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="n">mutable_key</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="c1"># Access value using the modified key</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">data_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">mutable_key</span><span class="p">))</span>  <span class="c1"># Output: None - key not found due to hashing issues</span>
+</span></code></pre></div></p>
 <p>In summary, ensuring key immutability in Python dictionaries is essential for maintaining data integrity, reliable retrieval, and preventing unintended modifications that could compromise the consistency of the stored data.</p>
 <h2 id="question_6">Question</h2>
 <p><strong>Main question</strong>: How does the order of key insertion impact the iteration over a Dictionary?</p>
@@ -3158,14 +3245,13 @@ mutable_key<span style="color: #555555">.</span>append(<span style="color: #FF66
 <li><strong>Randomized Sampling:</strong> In scenarios requiring random sampling or shuffling of Dictionary items, an unordered iteration might be preferred to introduce randomness without bias.</li>
 <li><strong>Hashed Lookups:</strong> When utilizing Dictionaries for quick key-based lookups and the order of insertion is not a factor, unordered iteration can be more efficient in certain lookup operations.</li>
 </ul>
-<div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #0099FF; font-style: italic"># Example of Iterating Over a Dictionary with Preserved Insertion Order in Python 3.7+</span>
-my_dict <span style="color: #555555">=</span> {<span style="color: #CC3300">&#39;a&#39;</span>: <span style="color: #FF6600">1</span>, <span style="color: #CC3300">&#39;b&#39;</span>: <span style="color: #FF6600">2</span>, <span style="color: #CC3300">&#39;c&#39;</span>: <span style="color: #FF6600">3</span>}
-
-<span style="color: #0099FF; font-style: italic"># Dictionary iteration returns key-value pairs in the order of insertion</span>
-<span style="color: #006699; font-weight: bold">for</span> key, value <span style="color: #000000; font-weight: bold">in</span> my_dict<span style="color: #555555">.</span>items():
-    <span style="color: #336666">print</span>(<span style="color: #CC3300">f&quot;Key: </span><span style="color: #AA0000">{</span>key<span style="color: #AA0000">}</span><span style="color: #CC3300">, Value: </span><span style="color: #AA0000">{</span>value<span style="color: #AA0000">}</span><span style="color: #CC3300">&quot;</span>)
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># Example of Iterating Over a Dictionary with Preserved Insertion Order in Python 3.7+</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1"># Dictionary iteration returns key-value pairs in the order of insertion</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Key: </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">, Value: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
 <p>In conclusion, the order of key insertion significantly impacts the iteration over a Dictionary, providing predictability, consistency, and reliability in accessing and processing data structures in Python.</p>
 <h3 id="additional-resources">Additional Resources:</h3>
 <ul>
@@ -3347,16 +3433,15 @@ my_dict <span style="color: #555555">=</span> {<span style="color: #CC3300">&#39
 </li>
 <li>By employing techniques like separate chaining, Python ensures that hash collisions have minimal impact on dictionary performance. Even in the presence of collisions, the retrieval and storage of key-value pairs remain efficient due to the mechanisms in place to manage collisions.</li>
 </ul>
-<div class="codehilite" style="background: #f0f3f3"><pre style="line-height: 125%;"><span></span><code><span style="color: #0099FF; font-style: italic"># Example illustrating hash collision handling in Python dictionaries</span>
-dictionary <span style="color: #555555">=</span> {}
-dictionary[<span style="color: #CC3300">&#39;key1&#39;</span>] <span style="color: #555555">=</span> <span style="color: #FF6600">1</span>
-dictionary[<span style="color: #CC3300">&#39;key2&#39;</span>] <span style="color: #555555">=</span> <span style="color: #FF6600">2</span>
-dictionary[<span style="color: #CC3300">&#39;key3&#39;</span>] <span style="color: #555555">=</span> <span style="color: #FF6600">3</span>
-
-<span style="color: #0099FF; font-style: italic"># Attempting to add a key that results in a collision</span>
-dictionary[<span style="color: #CC3300">&#39;eky1&#39;</span>] <span style="color: #555555">=</span> <span style="color: #FF6600">4</span>  <span style="color: #0099FF; font-style: italic"># Collision with &#39;key1&#39;, handled using separate chaining</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># Example illustrating hash collision handling in Python dictionaries</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">dictionary</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">dictionary</span><span class="p">[</span><span class="s1">&#39;key1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">dictionary</span><span class="p">[</span><span class="s1">&#39;key2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="n">dictionary</span><span class="p">[</span><span class="s1">&#39;key3&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="c1"># Attempting to add a key that results in a collision</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="n">dictionary</span><span class="p">[</span><span class="s1">&#39;eky1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1"># Collision with &#39;key1&#39;, handled using separate chaining</span>
+</span></code></pre></div>
 <h4 id="can-you-elaborate-on-scenarios-where-the-quality-of-the-hash-function-used-can-significantly-affect-dictionary-operations-and-efficiency">Can you elaborate on scenarios where the quality of the hash function used can significantly affect Dictionary operations and efficiency?</h4>
 <ul>
 <li><strong>Large Datasets</strong>:</li>
@@ -3404,12 +3489,12 @@ dictionary[<span style="color: #CC3300">&#39;eky1&#39;</span>] <span style="colo
 <li><strong>Importance of Descriptive Keys</strong>: Choose meaningful and descriptive keys to enhance code readability and clarify the purpose of each key-value pair.</li>
 <li>
 <p><strong>Example</strong>:
-     <code>python
-     employee = {
-         'name': 'Alice',
-         'age': 30,
-         'department': 'Engineering'
-     }</code></p>
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">employee</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="s1">&#39;department&#39;</span><span class="p">:</span> <span class="s1">&#39;Engineering&#39;</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="p">}</span>
+</span></code></pre></div></p>
 </li>
 <li>
 <p><strong>Immutable Keys</strong>:</p>
@@ -3417,11 +3502,11 @@ dictionary[<span style="color: #CC3300">&#39;eky1&#39;</span>] <span style="colo
 <li><strong>Prefer Immutable Keys</strong>: Opt for immutable data types like strings or tuples as keys to prevent unintended changes and ensure consistency.</li>
 <li>
 <p><strong>Example</strong>:
-     <code>python
-     schedule = {
-         ('2022-09-10', '8AM'): 'Meeting',
-         ('2022-09-10', '3PM'): 'Training'
-     }</code></p>
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">schedule</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    <span class="p">(</span><span class="s1">&#39;2022-09-10&#39;</span><span class="p">,</span> <span class="s1">&#39;8AM&#39;</span><span class="p">):</span> <span class="s1">&#39;Meeting&#39;</span><span class="p">,</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>    <span class="p">(</span><span class="s1">&#39;2022-09-10&#39;</span><span class="p">,</span> <span class="s1">&#39;3PM&#39;</span><span class="p">):</span> <span class="s1">&#39;Training&#39;</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="p">}</span>
+</span></code></pre></div></p>
 </li>
 <li>
 <p><strong>Error Handling</strong>:</p>
@@ -3429,20 +3514,20 @@ dictionary[<span style="color: #CC3300">&#39;eky1&#39;</span>] <span style="colo
 <li><strong>Graceful Error Handling</strong>: Implement error-handling mechanisms to manage scenarios such as missing keys or key errors smoothly.</li>
 <li>
 <p><strong>Example using <code>get()</code></strong>:
-     <code>python
-     employee = {'name': 'Bob', 'age': 25}
-     # Handle missing key gracefully
-     department = employee.get('department', 'Not Specified')</code></p>
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">employee</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="c1"># Handle missing key gracefully</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="n">department</span> <span class="o">=</span> <span class="n">employee</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;department&#39;</span><span class="p">,</span> <span class="s1">&#39;Not Specified&#39;</span><span class="p">)</span>
+</span></code></pre></div></p>
 </li>
 <li>
 <p><strong>Optimize Operations</strong>:</p>
 </li>
 <li><strong>Optimize Dictionary Operations</strong>: Utilize dictionary methods efficiently to enhance performance and reduce execution time.</li>
 <li><strong>Performance Example</strong>:
-     <code>python
-     # Efficient method to check key existence
-     if 'age' in employee:
-         print(f"Employee's age is {employee['age']}")</code></li>
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># Efficient method to check key existence</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">if</span> <span class="s1">&#39;age&#39;</span> <span class="ow">in</span> <span class="n">employee</span><span class="p">:</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Employee&#39;s age is </span><span class="si">{</span><span class="n">employee</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div></li>
 </ol>
 <h3 id="follow-up-questions_5">Follow-up Questions:</h3>
 <h4 id="how-can-proper-documentation-and-naming-conventions-enhance-the-readability-and-maintainability-of-code-involving-dictionaries">How can proper documentation and naming conventions enhance the readability and maintainability of code involving Dictionaries?</h4>
@@ -3451,17 +3536,17 @@ dictionary[<span style="color: #CC3300">&#39;eky1&#39;</span>] <span style="colo
 <li><strong>Clear Documentation</strong>: Provide clear comments and docstrings to explain the purpose of dictionaries and their key-value pairs.</li>
 <li>
 <p><strong>Example</strong>:
-    <code>python
-    # Dictionary to store student information
-    student_details = {'name': 'Alice', 'age': 20, 'grade': 'A'}</code></p>
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># Dictionary to store student information</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">student_details</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;grade&#39;</span><span class="p">:</span> <span class="s1">&#39;A&#39;</span><span class="p">}</span>
+</span></code></pre></div></p>
 </li>
 <li>
 <p><strong>Naming Conventions</strong>:</p>
 </li>
 <li><strong>Descriptive Naming</strong>: Use meaningful variable names for dictionaries and keys to convey their function.</li>
 <li><strong>Example</strong>:
-    <code>python
-    employee_details = {'name': 'Bob', 'age': 30}</code></li>
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">employee_details</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">}</span>
+</span></code></pre></div></li>
 </ul>
 <h4 id="what-error-handling-strategies-are-effective-when-dealing-with-key-errors-or-missing-key-value-pairs-in-dictionaries">What error-handling strategies are effective when dealing with key errors or missing key-value pairs in Dictionaries?</h4>
 <ul>
@@ -3470,12 +3555,12 @@ dictionary[<span style="color: #CC3300">&#39;eky1&#39;</span>] <span style="colo
 <li><strong>Try-Except Blocks</strong>:<ul>
 <li><strong>Try-Except Blocks</strong>: Utilize try-except blocks to catch and handle KeyError exceptions when accessing dictionary keys.</li>
 <li><strong>Example</strong>:
-  <code>python
-  employee = {'name': 'Alice', 'age': 25}
-  try:
-      department = employee['department']
-  except KeyError:
-      print("Department information not found.")</code></li>
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">employee</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="n">department</span> <span class="o">=</span> <span class="n">employee</span><span class="p">[</span><span class="s1">&#39;department&#39;</span><span class="p">]</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Department information not found.&quot;</span><span class="p">)</span>
+</span></code></pre></div></li>
 </ul>
 </li>
 </ul>
@@ -3515,9 +3600,55 @@ dictionary[<span style="color: #CC3300">&#39;eky1&#39;</span>] <span style="colo
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../sets/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sets">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Sets
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../strings/" class="md-footer__link md-footer__link--next" aria-label="Next: Strings">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Strings
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3527,6 +3658,65 @@ dictionary[<span style="color: #CC3300">&#39;eky1&#39;</span>] <span style="colo
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://teach-me-codes.github.io" target="_blank" rel="noopener" title="teach-me-codes.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://x.com/TeachMeCodes" target="_blank" rel="noopener" title="x.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/teachmecodes" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/teach-me-codes" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/@teach-me-codes" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
     </a>
   
 </div>
@@ -3541,7 +3731,81 @@ dictionary[<span style="color: #CC3300">&#39;eky1&#39;</span>] <span style="colo
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
