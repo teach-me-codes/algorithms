@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#question" class="md-skip">
+        <a href="#union-find-data-structure-in-depth" class="md-skip">
           Skip to content
         </a>
       
@@ -1048,6 +1048,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1076,6 +1078,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1084,894 +1088,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#question" class="md-nav__link">
+  <a href="#1-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Question
+      1. Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#answer" class="md-nav__link">
+  <a href="#2-key-concepts" class="md-nav__link">
     <span class="md-ellipsis">
-      Answer
+      2. Key Concepts
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Answer">
+    <nav class="md-nav" aria-label="2. Key Concepts">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#union-find-disjoint-set-union-exploring-a-fundamental-data-structure" class="md-nav__link">
+  <a href="#21-union-operation-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Union-Find (Disjoint Set Union): Exploring a Fundamental Data Structure
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Union-Find (Disjoint Set Union): Exploring a Fundamental Data Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilization-in-advanced-topics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilization in Advanced Topics
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#basic-operations-of-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Operations of Union-Find
+      2.1 Union Operation Example
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#efficient-connectivity-determination-in-union-find" class="md-nav__link">
+  <a href="#22-find-operation-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Efficient Connectivity Determination in Union-Find
+      2.2 Find Operation Example
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#scenarios-favoring-union-find-over-other-data-structures" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scenarios Favoring Union-Find Over Other Data Structures
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-can-you-explain-the-basic-operations-involved-in-union-find-data-structure-such-as-union-and-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Can you explain the basic operations involved in Union-Find data structure, such as union and find?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-how-does-union-find-efficiently-determine-the-connectivity-between-elements-in-a-set" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. How does Union-Find efficiently determine the connectivity between elements in a set?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-in-what-scenarios-is-union-find-more-suitable-compared-to-other-data-structures-like-arrays-or-linked-lists" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. In what scenarios is Union-Find more suitable compared to other data structures like arrays or linked lists?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-are-the-key-components-of-implementing-union-find-disjoint-set-union-data-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      What are the key components of implementing Union-Find (Disjoint Set Union) data structure?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-does-the-union-by-rank-technique-contribute-to-maintaining-balance-and-optimizing-the-union-find-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does the union by rank technique contribute to maintaining balance and optimizing the Union-Find structure?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-is-the-significance-of-path-compression-in-reducing-the-time-complexity-of-find-operations-in-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is the significance of path compression in reducing the time complexity of find operations in Union-Find?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-explain-any-additional-optimizations-that-can-further-enhance-the-performance-of-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you explain any additional optimizations that can further enhance the performance of Union-Find?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-union-find-solves-dynamic-connectivity-problems" class="md-nav__link">
-    <span class="md-ellipsis">
-      How Union-Find Solves Dynamic Connectivity Problems
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How Union-Find Solves Dynamic Connectivity Problems">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilization-of-union-find-in-dynamic-connectivity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilization of Union-Find in Dynamic Connectivity:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-the-role-of-union-find-in-efficiently-determining-the-presence-of-cycles-in-undirected-graphs" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is the role of Union-Find in efficiently determining the presence of cycles in undirected graphs?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-provide-an-example-of-how-union-find-can-be-applied-in-network-algorithms-like-kruskals-minimum-spanning-tree-algorithm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you provide an example of how Union-Find can be applied in network algorithms like Kruskal's minimum spanning tree algorithm?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-way-does-union-find-contribute-to-optimizing-the-runtime-complexity-of-dynamic-connectivity-problems" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what way does Union-Find contribute to optimizing the runtime complexity of dynamic connectivity problems?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-are-the-common-challenges-or-limitations-faced-when-working-with-union-find-data-structures" class="md-nav__link">
-    <span class="md-ellipsis">
-      What are the common challenges or limitations faced when working with Union-Find data structures?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-does-the-scalability-of-union-find-structures-impact-the-efficiency-of-operations-in-large-scale-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does the scalability of Union-Find structures impact the efficiency of operations in large-scale applications?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-strategies-can-be-adopted-to-mitigate-the-challenges-of-space-complexity-while-using-union-find-in-memory-constrained-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      What strategies can be adopted to mitigate the challenges of space complexity while using Union-Find in memory-constrained environments?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-scenarios-would-alternative-data-structures-be-favored-over-union-find-to-address-complexity-or-performance-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what scenarios would alternative data structures be favored over Union-Find to address complexity or performance issues?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-the-implementation-of-union-find-disjoint-set-union-differs-in-parallel-or-distributed-computing" class="md-nav__link">
-    <span class="md-ellipsis">
-      How the Implementation of Union-Find (Disjoint Set Union) Differs in Parallel or Distributed Computing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-synchronization-mechanisms-are-crucial-for-maintaining-data-consistency-in-union-find-implementations-across-multiple-threads-or-nodes" class="md-nav__link">
-    <span class="md-ellipsis">
-      What synchronization mechanisms are crucial for maintaining data consistency in Union-Find implementations across multiple threads or nodes?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-discuss-any-parallelization-strategies-or-optimizations-that-can-enhance-the-performance-of-union-find-in-distributed-computing-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you discuss any parallelization strategies or optimizations that can enhance the performance of Union-Find in distributed computing scenarios?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-ways-do-concurrency-issues-or-race-conditions-affect-the-integrity-of-union-find-data-structures-in-parallel-computing-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what ways do concurrency issues or race conditions affect the integrity of Union-Find data structures in parallel computing environments?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-union-find-disjoint-set-union-algorithms-can-be-extended-or-optimized" class="md-nav__link">
-    <span class="md-ellipsis">
-      How Union-Find (Disjoint Set Union) Algorithms can be Extended or Optimized
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-advantages-does-path-halving-offer-in-improving-the-time-complexity-of-path-compression-operations-in-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      What advantages does path halving offer in improving the time complexity of path compression operations in Union-Find?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-elaborate-on-the-concept-of-persistent-data-structures-in-union-find-and-their-relevance-in-maintaining-historical-states-for-efficient-backtracking" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you elaborate on the concept of persistent data structures in Union-Find and their relevance in maintaining historical states for efficient backtracking?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-scenarios-would-weighted-compression-be-preferred-over-traditional-path-compression-methods-in-union-find-implementations" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what scenarios would weighted compression be preferred over traditional path compression methods in Union-Find implementations?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#union-find-disjoint-set-union-bridging-graph-algorithms-and-data-structures" class="md-nav__link">
-    <span class="md-ellipsis">
-      Union-Find (Disjoint Set Union): Bridging Graph Algorithms and Data Structures
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Union-Find (Disjoint Set Union): Bridging Graph Algorithms and Data Structures">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#union-find-and-its-relation-to-related-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Union-Find and Its Relation to Related Concepts:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-similarities-or-differences-exist-between-union-find-and-algorithms-like-tarjans-strongly-connected-components-algorithm-in-graph-theory-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      What similarities or differences exist between Union-Find and algorithms like Tarjan's strongly connected components algorithm in graph theory applications?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-can-union-find-be-combined-with-graph-traversal-techniques-such-as-depth-first-search-or-breadth-first-search-to-solve-complex-connectivity-problems-efficiently" class="md-nav__link">
-    <span class="md-ellipsis">
-      How can Union-Find be combined with graph traversal techniques such as depth-first search or breadth-first search to solve complex connectivity problems efficiently?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-ways-does-union-find-complement-or-enhance-the-functionality-of-traditional-graph-data-structures-like-adjacency-lists-or-adjacency-matrices" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what ways does Union-Find complement or enhance the functionality of traditional graph data structures like adjacency lists or adjacency matrices?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-role-of-union-find-in-optimizing-graph-algorithms-and-network-connectivity" class="md-nav__link">
-    <span class="md-ellipsis">
-      The Role of Union-Find in Optimizing Graph Algorithms and Network Connectivity
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="The Role of Union-Find in Optimizing Graph Algorithms and Network Connectivity">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#efficient-cycle-detection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Efficient Cycle Detection:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#minimum-spanning-tree-construction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Minimum Spanning Tree Construction:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bipartite-graph-identification" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bipartite Graph Identification:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#impact-on-graph-clustering-algorithms" class="md-nav__link">
-    <span class="md-ellipsis">
-      Impact on Graph Clustering Algorithms:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-does-the-union-find-data-structure-enable-faster-cycle-detection-and-pathfinding-in-graph-algorithms-compared-to-naive-or-brute-force-approaches" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does the Union-Find data structure enable faster cycle detection and pathfinding in graph algorithms compared to naive or brute-force approaches?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-discuss-the-impact-of-union-find-on-reducing-the-computational-complexity-of-graph-clustering-algorithms-based-on-connected-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you discuss the impact of Union-Find on reducing the computational complexity of graph clustering algorithms based on connected components?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-scenarios-have-union-find-optimizations-been-instrumental-in-accelerating-the-convergence-of-network-connectivity-algorithms-in-distributed-systems-or-parallel-processing-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what scenarios have Union-Find optimizations been instrumental in accelerating the convergence of network connectivity algorithms in distributed systems or parallel processing environments?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extending-union-find-disjoint-set-union-with-advanced-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Extending Union-Find (Disjoint Set Union) with Advanced Features
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Extending Union-Find (Disjoint Set Union) with Advanced Features">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#element-ranking-in-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      Element Ranking in Union-Find:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-snippet-for-union-by-rank-implementation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code Snippet for Union-By-Rank Implementation:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#benefits-of-element-ranking-in-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benefits of Element Ranking in Union-Find:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-benefits-does-incorporating-element-ranking-bring-to-union-find-data-structures-in-terms-of-optimizing-union-operations-and-balancing-tree-heights" class="md-nav__link">
-    <span class="md-ellipsis">
-      What benefits does incorporating element ranking bring to Union-Find data structures in terms of optimizing union operations and balancing tree heights?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-provide-examples-of-applications-where-rollback-mechanisms-or-snapshotting-capabilities-in-union-find-are-crucial-for-maintaining-consistency-or-integrity-during-data-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you provide examples of applications where rollback mechanisms or snapshotting capabilities in Union-Find are crucial for maintaining consistency or integrity during data updates?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-does-the-concept-of-persistent-data-structures-intersect-with-the-design-principles-of-union-find-to-ensure-efficient-backtracking-and-version-control-in-dynamic-connectivity-problems" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does the concept of persistent data structures intersect with the design principles of Union-Find to ensure efficient backtracking and version control in dynamic connectivity problems?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilizing-union-find-disjoint-set-union-in-algorithm-design-and-system-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilizing Union-Find (Disjoint Set Union) in Algorithm Design and System Optimization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-does-union-find-contribute-to-simplifying-the-implementation-of-algorithms-like-kruskals-minimum-spanning-tree-or-hao-davie-clustering-in-network-optimization-tasks" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does Union-Find contribute to simplifying the implementation of algorithms like Kruskal's minimum spanning tree or Hao-Davie clustering in network optimization tasks?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-elaborate-on-the-role-of-union-find-in-achieving-efficient-fault-tolerance-or-load-balancing-strategies-in-distributed-systems-or-cloud-computing-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you elaborate on the role of Union-Find in achieving efficient fault tolerance or load balancing strategies in distributed systems or cloud computing environments?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-ways-can-union-find-be-customized-or-extended-to-support-domain-specific-requirements-in-industrial-applications-like-iot-networks-social-graph-analysis-or-real-time-data-processing-platforms" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what ways can Union-Find be customized or extended to support domain-specific requirements in industrial applications like IoT networks, social graph analysis, or real-time data processing platforms?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2105,6 +1254,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2113,894 +1264,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#question" class="md-nav__link">
+  <a href="#1-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Question
+      1. Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#answer" class="md-nav__link">
+  <a href="#2-key-concepts" class="md-nav__link">
     <span class="md-ellipsis">
-      Answer
+      2. Key Concepts
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Answer">
+    <nav class="md-nav" aria-label="2. Key Concepts">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#union-find-disjoint-set-union-exploring-a-fundamental-data-structure" class="md-nav__link">
+  <a href="#21-union-operation-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Union-Find (Disjoint Set Union): Exploring a Fundamental Data Structure
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Union-Find (Disjoint Set Union): Exploring a Fundamental Data Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilization-in-advanced-topics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilization in Advanced Topics
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#basic-operations-of-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Operations of Union-Find
+      2.1 Union Operation Example
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#efficient-connectivity-determination-in-union-find" class="md-nav__link">
+  <a href="#22-find-operation-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Efficient Connectivity Determination in Union-Find
+      2.2 Find Operation Example
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#scenarios-favoring-union-find-over-other-data-structures" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scenarios Favoring Union-Find Over Other Data Structures
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-can-you-explain-the-basic-operations-involved-in-union-find-data-structure-such-as-union-and-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Can you explain the basic operations involved in Union-Find data structure, such as union and find?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-how-does-union-find-efficiently-determine-the-connectivity-between-elements-in-a-set" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. How does Union-Find efficiently determine the connectivity between elements in a set?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-in-what-scenarios-is-union-find-more-suitable-compared-to-other-data-structures-like-arrays-or-linked-lists" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. In what scenarios is Union-Find more suitable compared to other data structures like arrays or linked lists?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-are-the-key-components-of-implementing-union-find-disjoint-set-union-data-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      What are the key components of implementing Union-Find (Disjoint Set Union) data structure?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-does-the-union-by-rank-technique-contribute-to-maintaining-balance-and-optimizing-the-union-find-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does the union by rank technique contribute to maintaining balance and optimizing the Union-Find structure?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-is-the-significance-of-path-compression-in-reducing-the-time-complexity-of-find-operations-in-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is the significance of path compression in reducing the time complexity of find operations in Union-Find?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-explain-any-additional-optimizations-that-can-further-enhance-the-performance-of-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you explain any additional optimizations that can further enhance the performance of Union-Find?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-union-find-solves-dynamic-connectivity-problems" class="md-nav__link">
-    <span class="md-ellipsis">
-      How Union-Find Solves Dynamic Connectivity Problems
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How Union-Find Solves Dynamic Connectivity Problems">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilization-of-union-find-in-dynamic-connectivity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilization of Union-Find in Dynamic Connectivity:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-the-role-of-union-find-in-efficiently-determining-the-presence-of-cycles-in-undirected-graphs" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is the role of Union-Find in efficiently determining the presence of cycles in undirected graphs?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-provide-an-example-of-how-union-find-can-be-applied-in-network-algorithms-like-kruskals-minimum-spanning-tree-algorithm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you provide an example of how Union-Find can be applied in network algorithms like Kruskal's minimum spanning tree algorithm?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-way-does-union-find-contribute-to-optimizing-the-runtime-complexity-of-dynamic-connectivity-problems" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what way does Union-Find contribute to optimizing the runtime complexity of dynamic connectivity problems?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-are-the-common-challenges-or-limitations-faced-when-working-with-union-find-data-structures" class="md-nav__link">
-    <span class="md-ellipsis">
-      What are the common challenges or limitations faced when working with Union-Find data structures?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-does-the-scalability-of-union-find-structures-impact-the-efficiency-of-operations-in-large-scale-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does the scalability of Union-Find structures impact the efficiency of operations in large-scale applications?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-strategies-can-be-adopted-to-mitigate-the-challenges-of-space-complexity-while-using-union-find-in-memory-constrained-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      What strategies can be adopted to mitigate the challenges of space complexity while using Union-Find in memory-constrained environments?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-scenarios-would-alternative-data-structures-be-favored-over-union-find-to-address-complexity-or-performance-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what scenarios would alternative data structures be favored over Union-Find to address complexity or performance issues?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-the-implementation-of-union-find-disjoint-set-union-differs-in-parallel-or-distributed-computing" class="md-nav__link">
-    <span class="md-ellipsis">
-      How the Implementation of Union-Find (Disjoint Set Union) Differs in Parallel or Distributed Computing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-synchronization-mechanisms-are-crucial-for-maintaining-data-consistency-in-union-find-implementations-across-multiple-threads-or-nodes" class="md-nav__link">
-    <span class="md-ellipsis">
-      What synchronization mechanisms are crucial for maintaining data consistency in Union-Find implementations across multiple threads or nodes?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-discuss-any-parallelization-strategies-or-optimizations-that-can-enhance-the-performance-of-union-find-in-distributed-computing-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you discuss any parallelization strategies or optimizations that can enhance the performance of Union-Find in distributed computing scenarios?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-ways-do-concurrency-issues-or-race-conditions-affect-the-integrity-of-union-find-data-structures-in-parallel-computing-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what ways do concurrency issues or race conditions affect the integrity of Union-Find data structures in parallel computing environments?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-union-find-disjoint-set-union-algorithms-can-be-extended-or-optimized" class="md-nav__link">
-    <span class="md-ellipsis">
-      How Union-Find (Disjoint Set Union) Algorithms can be Extended or Optimized
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-advantages-does-path-halving-offer-in-improving-the-time-complexity-of-path-compression-operations-in-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      What advantages does path halving offer in improving the time complexity of path compression operations in Union-Find?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-elaborate-on-the-concept-of-persistent-data-structures-in-union-find-and-their-relevance-in-maintaining-historical-states-for-efficient-backtracking" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you elaborate on the concept of persistent data structures in Union-Find and their relevance in maintaining historical states for efficient backtracking?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-scenarios-would-weighted-compression-be-preferred-over-traditional-path-compression-methods-in-union-find-implementations" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what scenarios would weighted compression be preferred over traditional path compression methods in Union-Find implementations?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#union-find-disjoint-set-union-bridging-graph-algorithms-and-data-structures" class="md-nav__link">
-    <span class="md-ellipsis">
-      Union-Find (Disjoint Set Union): Bridging Graph Algorithms and Data Structures
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Union-Find (Disjoint Set Union): Bridging Graph Algorithms and Data Structures">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#union-find-and-its-relation-to-related-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Union-Find and Its Relation to Related Concepts:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-similarities-or-differences-exist-between-union-find-and-algorithms-like-tarjans-strongly-connected-components-algorithm-in-graph-theory-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      What similarities or differences exist between Union-Find and algorithms like Tarjan's strongly connected components algorithm in graph theory applications?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-can-union-find-be-combined-with-graph-traversal-techniques-such-as-depth-first-search-or-breadth-first-search-to-solve-complex-connectivity-problems-efficiently" class="md-nav__link">
-    <span class="md-ellipsis">
-      How can Union-Find be combined with graph traversal techniques such as depth-first search or breadth-first search to solve complex connectivity problems efficiently?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-ways-does-union-find-complement-or-enhance-the-functionality-of-traditional-graph-data-structures-like-adjacency-lists-or-adjacency-matrices" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what ways does Union-Find complement or enhance the functionality of traditional graph data structures like adjacency lists or adjacency matrices?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-role-of-union-find-in-optimizing-graph-algorithms-and-network-connectivity" class="md-nav__link">
-    <span class="md-ellipsis">
-      The Role of Union-Find in Optimizing Graph Algorithms and Network Connectivity
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="The Role of Union-Find in Optimizing Graph Algorithms and Network Connectivity">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#efficient-cycle-detection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Efficient Cycle Detection:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#minimum-spanning-tree-construction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Minimum Spanning Tree Construction:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bipartite-graph-identification" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bipartite Graph Identification:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#impact-on-graph-clustering-algorithms" class="md-nav__link">
-    <span class="md-ellipsis">
-      Impact on Graph Clustering Algorithms:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-does-the-union-find-data-structure-enable-faster-cycle-detection-and-pathfinding-in-graph-algorithms-compared-to-naive-or-brute-force-approaches" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does the Union-Find data structure enable faster cycle detection and pathfinding in graph algorithms compared to naive or brute-force approaches?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-discuss-the-impact-of-union-find-on-reducing-the-computational-complexity-of-graph-clustering-algorithms-based-on-connected-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you discuss the impact of Union-Find on reducing the computational complexity of graph clustering algorithms based on connected components?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-scenarios-have-union-find-optimizations-been-instrumental-in-accelerating-the-convergence-of-network-connectivity-algorithms-in-distributed-systems-or-parallel-processing-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what scenarios have Union-Find optimizations been instrumental in accelerating the convergence of network connectivity algorithms in distributed systems or parallel processing environments?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extending-union-find-disjoint-set-union-with-advanced-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Extending Union-Find (Disjoint Set Union) with Advanced Features
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Extending Union-Find (Disjoint Set Union) with Advanced Features">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#element-ranking-in-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      Element Ranking in Union-Find:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-snippet-for-union-by-rank-implementation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code Snippet for Union-By-Rank Implementation:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#benefits-of-element-ranking-in-union-find" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benefits of Element Ranking in Union-Find:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-benefits-does-incorporating-element-ranking-bring-to-union-find-data-structures-in-terms-of-optimizing-union-operations-and-balancing-tree-heights" class="md-nav__link">
-    <span class="md-ellipsis">
-      What benefits does incorporating element ranking bring to Union-Find data structures in terms of optimizing union operations and balancing tree heights?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-provide-examples-of-applications-where-rollback-mechanisms-or-snapshotting-capabilities-in-union-find-are-crucial-for-maintaining-consistency-or-integrity-during-data-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you provide examples of applications where rollback mechanisms or snapshotting capabilities in Union-Find are crucial for maintaining consistency or integrity during data updates?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-does-the-concept-of-persistent-data-structures-intersect-with-the-design-principles-of-union-find-to-ensure-efficient-backtracking-and-version-control-in-dynamic-connectivity-problems" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does the concept of persistent data structures intersect with the design principles of Union-Find to ensure efficient backtracking and version control in dynamic connectivity problems?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      Question
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answer_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Answer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilizing-union-find-disjoint-set-union-in-algorithm-design-and-system-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilizing Union-Find (Disjoint Set Union) in Algorithm Design and System Optimization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#follow-up-questions_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      Follow-up Questions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Follow-up Questions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-does-union-find-contribute-to-simplifying-the-implementation-of-algorithms-like-kruskals-minimum-spanning-tree-or-hao-davie-clustering-in-network-optimization-tasks" class="md-nav__link">
-    <span class="md-ellipsis">
-      How does Union-Find contribute to simplifying the implementation of algorithms like Kruskal's minimum spanning tree or Hao-Davie clustering in network optimization tasks?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-you-elaborate-on-the-role-of-union-find-in-achieving-efficient-fault-tolerance-or-load-balancing-strategies-in-distributed-systems-or-cloud-computing-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Can you elaborate on the role of Union-Find in achieving efficient fault tolerance or load balancing strategies in distributed systems or cloud computing environments?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-what-ways-can-union-find-be-customized-or-extended-to-support-domain-specific-requirements-in-industrial-applications-like-iot-networks-social-graph-analysis-or-real-time-data-processing-platforms" class="md-nav__link">
-    <span class="md-ellipsis">
-      In what ways can Union-Find be customized or extended to support domain-specific requirements in industrial applications like IoT networks, social graph analysis, or real-time data processing platforms?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -3040,8 +1336,252 @@
   
 
 
-  <h1>Union-Find</h1>
-
+<h1 id="union-find-data-structure-in-depth">Union-Find Data Structure in Depth</h1>
+<h2 id="1-overview">1. Overview</h2>
+<ul>
+<li><strong>Explanation of Union-Find Data Structure</strong></li>
+<li>
+<p>The Union-Find, also known as Disjoint Set Union (DSU), is a fundamental data structure that efficiently maintains a collection of disjoint sets. Each set has uniquely identifiable elements, and the structure tracks how these sets are related to each other.</p>
+</li>
+<li>
+<p><strong>Applications of Union-Find in Algorithms</strong></p>
+</li>
+<li><strong>Network Connectivity</strong>: Union-Find is commonly used to determine connectivity within a network. It efficiently answers queries about whether two elements are connected within a network.</li>
+<li><strong>Kruskal's Algorithm</strong>: Union-Find plays a crucial role in implementing Kruskal's algorithm for finding a minimum spanning tree in a graph. It helps in identifying cycles during the graph traversal process.</li>
+</ul>
+<h2 id="2-key-concepts">2. Key Concepts</h2>
+<ul>
+<li><strong>Union Operation</strong></li>
+<li>
+<p>The union operation in Union-Find merges two disjoint sets into one by connecting their roots. It establishes a relationship between the sets and reduces the complexity of set operations.</p>
+</li>
+<li>
+<p><strong>Find Operation</strong></p>
+</li>
+<li>The find operation determines the root of the set to which an element belongs. It is used to identify the subset to which an element belongs and is crucial for efficient set manipulation.</li>
+</ul>
+<h3 id="21-union-operation-example">2.1 Union Operation Example</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span> <span class="nc">UnionFind</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">!=</span> <span class="n">x</span><span class="p">:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="n">root_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        <span class="n">root_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="k">if</span> <span class="n">root_x</span> <span class="o">!=</span> <span class="n">root_y</span><span class="p">:</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">root_x</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_y</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1"># Initializing Union-Find with 5 elements</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="n">uf</span> <span class="o">=</span> <span class="n">UnionFind</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="n">uf</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="n">uf</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="nb">print</span><span class="p">(</span><span class="n">uf</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>  <span class="c1"># Output: [1, 1, 3, 3, 4]</span>
+</span></code></pre></div>
+<h3 id="22-find-operation-example">2.2 Find Operation Example</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Using the previously defined UnionFind class</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">uf</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>  <span class="c1"># Output: 1 (If 1 and 0 are connected)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">uf</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># Output: 3 (If 3 and 2 are connected)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">uf</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>  <span class="c1"># Output: 4 (If not connected to any other element)</span>
+</span></code></pre></div>
+<p>In conclusion, Union-Find is a versatile data structure with significant applications in algorithms involving set manipulation and connectivity analysis. Understanding the core operations of union and find is essential for leveraging the power of Union-Find in various algorithmic contexts.</p>
+<h1 id="union-find-disjoint-set-union-dsu">Union-Find: Disjoint Set Union (DSU)</h1>
+<h2 id="1-disjoint-sets">1. Disjoint Sets</h2>
+<ol>
+<li>
+<p><strong>Definition and Characteristics of Disjoint Sets:</strong></p>
+<ul>
+<li>Disjoint sets are collections of sets in which no element is shared between any two sets. Initially, each element belongs to a unique set.</li>
+<li>This property of disjoint sets ensures elements are grouped separately, facilitating operations for tracking connectivity and partitioning.</li>
+</ul>
+</li>
+<li>
+<p><strong>Visual Representation of Disjoint Sets:</strong></p>
+<ul>
+<li>Visualize sets {1, 2, 3} and {4, 5} as disjoint sets with no common elements.</li>
+<li>In Union-Find, each set is represented by a tree-like structure, where elements point to their parent, enabling efficient union and find operations.</li>
+</ul>
+</li>
+</ol>
+<h2 id="2-union-operation">2. Union Operation</h2>
+<ol>
+<li>
+<p><strong>Description of the Union Operation in Union-Find:</strong></p>
+<ul>
+<li>The union operation merges two disjoint sets by linking the root of one set to the root of the other.</li>
+<li>This operation combines sets while preserving disjointness, optimizing connectivity tracking.</li>
+</ul>
+</li>
+<li>
+<p><strong>Implementing Union Operation Efficiently:</strong></p>
+<ul>
+<li>Efficiently implement the union operation by optimizing the tree structure using rank or size.</li>
+<li>Techniques like union by rank or union by size help balance trees during unions, enhancing Union-Find's efficiency.</li>
+</ul>
+</li>
+</ol>
+<h2 id="3-find-operation">3. Find Operation</h2>
+<ol>
+<li>
+<p><strong>Explanation of the Find Operation in Union-Find:</strong></p>
+<ul>
+<li>The find operation identifies the set to which an element belongs by traversing parent pointers to reach the root.</li>
+<li>This operation determines the representative element for a set, aiding in efficient set membership determination.</li>
+</ul>
+</li>
+<li>
+<p><strong>Optimizing Find Operation for Efficiency:</strong></p>
+<ul>
+<li>Optimize the find operation using path compression to directly connect parent pointers to the root.</li>
+<li>Path compression reduces path length, improving efficiency in subsequent find operations and overall performance.</li>
+</ul>
+</li>
+</ol>
+<p>The Union-Find data structure, or Disjoint Set Union (DSU), is essential in applications like network connectivity analysis and algorithms such as Kruskal's Minimum Spanning Tree algorithm. With efficient union and find operations, DSU manages disjoint sets effectively, offering insights into connectivity relationships within systems.</p>
+<h1 id="union-find-data-structure-exploration">Union-Find Data Structure Exploration</h1>
+<h2 id="1-quick-find-algorithm">1. Quick Find Algorithm</h2>
+<ul>
+<li><strong>Definition and Functioning</strong>:</li>
+<li>The Quick Find algorithm assigns a unique identifier to each element in a set. During union operations between sets, all elements with one identifier are updated to the other identifier.</li>
+<li><strong>Time Complexity</strong>:</li>
+<li><strong>Union Operation</strong>: <span class="arithmatex">\(O(n)\)</span> - Updating all elements in one set.</li>
+<li><strong>Find Operation</strong>: <span class="arithmatex">\(O(1)\)</span> - Directly accessing the index to determine set membership.</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span> <span class="nc">QuickFind</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="n">pid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">p</span><span class="p">]</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="n">qid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">q</span><span class="p">]</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">)):</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">pid</span><span class="p">:</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">qid</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">q</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="2-quick-union-algorithm">2. Quick Union Algorithm</h2>
+<ul>
+<li><strong>Concept and Working</strong>:</li>
+<li>Quick Union utilizes tree representation where each element points to its parent. Union involves setting the root of one tree as the parent of another tree's root.</li>
+<li><strong>Performance and Enhancements</strong>:</li>
+<li><strong>Union Operation</strong>: <span class="arithmatex">\(O(n)\)</span> in the worst-case scenario for skewed trees.</li>
+<li><strong>Find Operation</strong>: <span class="arithmatex">\(O(n)\)</span> in unbalanced trees.</li>
+<li><strong>Optimizations</strong>: Path compression and weighting for enhanced efficiency.</li>
+</ul>
+<h2 id="3-weighted-union-algorithm">3. Weighted Union Algorithm</h2>
+<ul>
+<li><strong>Introduction to Weighted Union</strong>:</li>
+<li>Weighted Union enhances Quick Union by attaching the smaller tree to the larger tree during union, preventing tall trees.</li>
+<li><strong>Advantages Over Quick Union</strong>:</li>
+<li><strong>Enhanced Performance</strong>: Offers logarithmic time complexity for both union and find operations.</li>
+<li><strong>Balanced Trees</strong>: Ensures balanced tree structures.</li>
+</ul>
+<h2 id="4-path-compression-optimization">4. Path Compression Optimization</h2>
+<ul>
+<li><strong>Path Compression Technique Overview</strong>:</li>
+<li>Path Compression flattens tree structures during find operations, improving future access efficiency.</li>
+<li><strong>Effects on Union-Find Efficiency</strong>:</li>
+<li><strong>Height Reduction</strong>: Leads to reduced tree height and improved overall performance.</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span> <span class="nc">WeightedQuickUnionPathCompression</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">n</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">!=</span> <span class="n">p</span><span class="p">:</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">p</span><span class="p">]</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>        <span class="n">root_p</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="n">root_q</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        <span class="k">if</span> <span class="n">root_p</span> <span class="o">==</span> <span class="n">root_q</span><span class="p">:</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>            <span class="k">return</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="n">root_p</span><span class="p">]</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="n">root_q</span><span class="p">]:</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">root_p</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_q</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="n">root_q</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="n">root_p</span><span class="p">]</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">root_q</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_p</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="n">root_p</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="n">root_q</span><span class="p">]</span>
+</span></code></pre></div>
+<p>By mastering these Union-Find variations, you can efficiently handle disjoint sets and optimize operations in scenarios like network connectivity and algorithms such as Kruskal's Minimum Spanning Tree algorithm.</p>
+<h1 id="union-find-tracking-disjoint-sets">Union-Find: Tracking Disjoint Sets</h1>
+<h2 id="1-introduction-to-union-find">1. Introduction to Union-Find</h2>
+<p>Union-Find, also known as Disjoint Set Union (DSU), is a fundamental data structure that efficiently tracks a set of elements partitioned into disjoint subsets. It provides operations to determine the <strong>connection</strong> between elements and unite disjoint sets into a larger set. This data structure serves various applications, notably in <strong>network connectivity</strong> and algorithms like <strong>Kruskal's Minimum Spanning Tree</strong>.</p>
+<h2 id="2-operations-and-structure">2. Operations and Structure</h2>
+<p>Union-Find supports two primary operations: <strong>Union</strong> and <strong>Find</strong>.
+1. <strong>Union Operation</strong>: Combines two disjoint sets into one by connecting their representatives or roots.
+2. <strong>Find Operation</strong>: Determines the representative element or root of a set to identify its subset.</p>
+<p>The data structure can be implemented using several approaches, such as <strong>Quick Find</strong>, <strong>Quick Union</strong>, and <strong>Weighted Union</strong> with <strong>Path Compression</strong> for optimization.</p>
+<h2 id="3-applications-of-union-find">3. Applications of Union-Find</h2>
+<h3 id="31-connectivity-problems">3.1 Connectivity Problems</h3>
+<ul>
+<li>Union-Find is invaluable for solving problems related to connectivity, such as identifying connected components in a graph or network.</li>
+<li><strong>Example</strong>: In a network of computers, Union-Find can quickly determine if two computers can communicate directly or indirectly.</li>
+</ul>
+<h3 id="32-cycle-detection">3.2 Cycle Detection</h3>
+<ul>
+<li>This data structure is instrumental in detecting cycles within graphs, crucial for algorithms like <strong>Kruskal's Minimum Spanning Tree</strong>.</li>
+<li><strong>Example</strong>: When adding edges to form a minimum spanning tree, Union-Find efficiently identifies and avoids creating cycles.</li>
+</ul>
+<h3 id="33-percolation">3.3 Percolation</h3>
+<ul>
+<li>Union-Find aids in understanding percolation processes, such as studying fluid flow through porous materials.</li>
+<li>It is utilized to calculate the percolation threshold, the critical value for the material to transition from a blocked to a percolating state.</li>
+</ul>
+<p>In summary, Union-Find is a versatile data structure applicable in various domains due to its efficiency in tracking disjoint sets and determining connectivity relationships. Its role in network connectivity, graph algorithms, and percolation studies highlights its significance in both theoretical and practical scenarios. By leveraging Union-Find, developers can address complex problems with ease and optimize algorithm performance effectively.</p>
+<h1 id="union-find-in-data-structures">Union-Find in Data Structures</h1>
+<h2 id="1-improving-union-find-efficiency">1. Improving Union-Find Efficiency</h2>
+<h3 id="11-optimizing-union-operation">1.1 Optimizing Union Operation</h3>
+<ul>
+<li><strong>Techniques for Efficiency Enhancement</strong></li>
+<li>The union operation in Union-Find involves merging two disjoint sets. Implementing various techniques is essential for improving its efficiency.</li>
+<li><strong>Balancing Complexity</strong></li>
+<li>Maintaining complexity balance in the union operation across different sets is crucial for achieving optimal performance.</li>
+</ul>
+<h3 id="12-enhancing-find-operation">1.2 Enhancing Find Operation</h3>
+<ul>
+<li><strong>Strategies for Performance Improvement</strong></li>
+<li>The find operation identifies the set to which an element belongs. Enhancing its performance is vital for overall efficiency.</li>
+<li><strong>Path Compression vs. Weighted Union</strong></li>
+<li>A trade-off exists between path compression for reducing tree height and weighted union for balancing tree sizes when optimizing the find operation.</li>
+</ul>
+<h3 id="13-advanced-optimization-techniques">1.3 Advanced Optimization Techniques</h3>
+<ul>
+<li><strong>Further Enhancements</strong></li>
+<li>Advanced optimization techniques in Union-Find involve sophisticated algorithms and data structures to boost operation efficiency.</li>
+<li><strong>Research Trends and Future Developments</strong></li>
+<li>Ongoing research in Union-Find algorithms leads to innovative improvements and explores future directions for enhancing performance.</li>
+</ul>
+<h2 id="2-union-find-implementation-example">2. Union-Find Implementation Example</h2>
+<p>Here is an exemplary implementation of the Union-Find data structure in Python:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">class</span> <span class="nc">UnionFind</span><span class="p">:</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">!=</span> <span class="n">x</span><span class="p">:</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>        <span class="n">root_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>        <span class="n">root_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>        <span class="k">if</span> <span class="n">root_x</span> <span class="o">!=</span> <span class="n">root_y</span><span class="p">:</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">root_x</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_y</span>
+</span></code></pre></div>
+<p>In this implementation, <code>find</code> utilizes path compression for optimization, while <code>union</code> implements weighted union by merging based on tree size.</p>
+<p>Union-Find, a core data structure in network connectivity and algorithms like Kruskal's algorithm, is pivotal for efficiently managing disjoint set operations. By optimizing union and find operations, along with exploring advanced techniques, Union-Find can be fine-tuned for enhanced performance and scalability.</p>
+<hr />
+<h1 id="brushup-your-data-structure-and-algorithms">Brushup Your Data Structure and Algorithms</h1>
+<hr />
 <h2 id="question">Question</h2>
 <p><strong>Main question</strong>: What is Union-Find (Disjoint Set Union) and how is it used in advanced topics?</p>
 <p><strong>Explanation</strong>: The candidate should elaborate on Union-Find as a data structure that tracks elements partitioned into disjoint subsets, its applications in network connectivity, and its relevance in algorithms like Kruskal's algorithm.</p>
@@ -3271,45 +1811,45 @@
 <li>Kruskal's algorithm utilizes Union-Find to construct the minimum spanning tree (MST) of a graph efficiently. </li>
 <li>By initially considering each vertex as a separate set and then iteratively adding edges of minimum weight while avoiding cycles using Union-Find operations, the algorithm builds a spanning tree with the lowest total weight.</li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Python implementation of Union-Find in Kruskal&#39;s Algorithm</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">def</span> <span class="nf">kruskal_mst</span><span class="p">(</span><span class="n">graph</span><span class="p">):</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="c1"># Function to find set representative using Union-Find</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">def</span> <span class="nf">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="k">if</span> <span class="n">parent</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">:</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>            <span class="k">return</span> <span class="n">i</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="k">return</span> <span class="n">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">parent</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="c1"># Function to perform union operation</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">rank</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="n">x_root</span> <span class="o">=</span> <span class="n">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        <span class="n">y_root</span> <span class="o">=</span> <span class="n">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="k">if</span> <span class="n">rank</span><span class="p">[</span><span class="n">x_root</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">rank</span><span class="p">[</span><span class="n">y_root</span><span class="p">]:</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>            <span class="n">parent</span><span class="p">[</span><span class="n">x_root</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_root</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        <span class="k">elif</span> <span class="n">rank</span><span class="p">[</span><span class="n">x_root</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">rank</span><span class="p">[</span><span class="n">y_root</span><span class="p">]:</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            <span class="n">parent</span><span class="p">[</span><span class="n">y_root</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_root</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>            <span class="n">parent</span><span class="p">[</span><span class="n">y_root</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_root</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            <span class="n">rank</span><span class="p">[</span><span class="n">x_root</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    <span class="c1"># Code for Kruskal&#39;s algorithm implementation</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="n">parent</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">))]</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="n">rank</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="n">mst</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="n">edges</span> <span class="o">=</span> <span class="p">[(</span><span class="n">graph</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">v</span><span class="p">],</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">))</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">))</span> <span class="k">if</span> <span class="n">graph</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">v</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    <span class="n">edges</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>    <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">edges</span><span class="p">:</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>        <span class="n">weight</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">edge</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>        <span class="n">x</span> <span class="o">=</span> <span class="n">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>        <span class="n">y</span> <span class="o">=</span> <span class="n">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>        <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="n">y</span><span class="p">:</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>            <span class="n">mst</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">weight</span><span class="p">))</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>            <span class="n">union</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">rank</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>    <span class="k">return</span> <span class="n">mst</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Python implementation of Union-Find in Kruskal&#39;s Algorithm</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">def</span> <span class="nf">kruskal_mst</span><span class="p">(</span><span class="n">graph</span><span class="p">):</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="c1"># Function to find set representative using Union-Find</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">def</span> <span class="nf">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="k">if</span> <span class="n">parent</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">:</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>            <span class="k">return</span> <span class="n">i</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="k">return</span> <span class="n">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">parent</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="c1"># Function to perform union operation</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">rank</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>        <span class="n">x_root</span> <span class="o">=</span> <span class="n">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>        <span class="n">y_root</span> <span class="o">=</span> <span class="n">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>        <span class="k">if</span> <span class="n">rank</span><span class="p">[</span><span class="n">x_root</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">rank</span><span class="p">[</span><span class="n">y_root</span><span class="p">]:</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>            <span class="n">parent</span><span class="p">[</span><span class="n">x_root</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_root</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>        <span class="k">elif</span> <span class="n">rank</span><span class="p">[</span><span class="n">x_root</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">rank</span><span class="p">[</span><span class="n">y_root</span><span class="p">]:</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>            <span class="n">parent</span><span class="p">[</span><span class="n">y_root</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_root</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>            <span class="n">parent</span><span class="p">[</span><span class="n">y_root</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_root</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>            <span class="n">rank</span><span class="p">[</span><span class="n">x_root</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>    <span class="c1"># Code for Kruskal&#39;s algorithm implementation</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>    <span class="n">parent</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">))]</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>    <span class="n">rank</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>    <span class="n">mst</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>    <span class="n">edges</span> <span class="o">=</span> <span class="p">[(</span><span class="n">graph</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">v</span><span class="p">],</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">))</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">))</span> <span class="k">if</span> <span class="n">graph</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">v</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>    <span class="n">edges</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>    <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">edges</span><span class="p">:</span>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>        <span class="n">weight</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">edge</span>
+</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>        <span class="n">x</span> <span class="o">=</span> <span class="n">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span>
+</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>        <span class="n">y</span> <span class="o">=</span> <span class="n">find_parent</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+</span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>
+</span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>        <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="n">y</span><span class="p">:</span>
+</span><span id="__span-5-36"><a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a>            <span class="n">mst</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">weight</span><span class="p">))</span>
+</span><span id="__span-5-37"><a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a>            <span class="n">union</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">rank</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span><span id="__span-5-38"><a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a>
+</span><span id="__span-5-39"><a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a>    <span class="k">return</span> <span class="n">mst</span>
 </span></code></pre></div>
 <h4 id="in-what-way-does-union-find-contribute-to-optimizing-the-runtime-complexity-of-dynamic-connectivity-problems">In what way does Union-Find contribute to optimizing the runtime complexity of dynamic connectivity problems?</h4>
 <ul>
@@ -3753,18 +2293,18 @@
 <li>During union operations, if two subsets have the same rank, the rank of the resulting subset is incremented by 1.</li>
 </ul>
 <h4 id="code-snippet-for-union-by-rank-implementation">Code Snippet for Union-By-Rank Implementation:</h4>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">root_u</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">root_v</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="k">if</span> <span class="n">root_u</span> <span class="o">!=</span> <span class="n">root_v</span><span class="p">:</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">root_u</span><span class="p">]</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">root_v</span><span class="p">]:</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">root_u</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_v</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">root_u</span><span class="p">]</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">root_v</span><span class="p">]:</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">root_v</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_u</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">root_v</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_u</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">root_u</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="n">root_u</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="n">root_v</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">if</span> <span class="n">root_u</span> <span class="o">!=</span> <span class="n">root_v</span><span class="p">:</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">root_u</span><span class="p">]</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">root_v</span><span class="p">]:</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">root_u</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_v</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">root_u</span><span class="p">]</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">root_v</span><span class="p">]:</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">root_v</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_u</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">[</span><span class="n">root_v</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_u</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">root_u</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
 </span></code></pre></div>
 <h4 id="benefits-of-element-ranking-in-union-find">Benefits of Element Ranking in Union-Find:</h4>
 <ul>
@@ -3851,21 +2391,21 @@
 <li><em>Role of Union-Find</em>: Union-Find is integral to Kruskal's Algorithm for finding the minimum spanning tree of a connected, edge-weighted graph.</li>
 <li>
 <p><em>Implementation</em>: </p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Python Implementation of Kruskal&#39;s Algorithm using Union-Find</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">def</span> <span class="nf">kruskal</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="c1"># Initialize Union-Find data structure</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">dsu</span> <span class="o">=</span> <span class="n">UnionFind</span><span class="p">()</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="c1"># Sort edges by weight</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">edges</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">graph</span><span class="o">.</span><span class="n">edges</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">weight</span><span class="p">)</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="c1"># Initialize empty minimum spanning tree</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="n">mst</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">edges</span><span class="p">:</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        <span class="k">if</span> <span class="n">dsu</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">edge</span><span class="o">.</span><span class="n">source</span><span class="p">)</span> <span class="o">!=</span> <span class="n">dsu</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">edge</span><span class="o">.</span><span class="n">destination</span><span class="p">):</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>            <span class="n">mst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">edge</span><span class="p">)</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>            <span class="n">dsu</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">edge</span><span class="o">.</span><span class="n">source</span><span class="p">,</span> <span class="n">edge</span><span class="o">.</span><span class="n">destination</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Python Implementation of Kruskal&#39;s Algorithm using Union-Find</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">def</span> <span class="nf">kruskal</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="c1"># Initialize Union-Find data structure</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="n">dsu</span> <span class="o">=</span> <span class="n">UnionFind</span><span class="p">()</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="c1"># Sort edges by weight</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="n">edges</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">graph</span><span class="o">.</span><span class="n">edges</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">weight</span><span class="p">)</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="c1"># Initialize empty minimum spanning tree</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="n">mst</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>    <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">edges</span><span class="p">:</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>        <span class="k">if</span> <span class="n">dsu</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">edge</span><span class="o">.</span><span class="n">source</span><span class="p">)</span> <span class="o">!=</span> <span class="n">dsu</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">edge</span><span class="o">.</span><span class="n">destination</span><span class="p">):</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>            <span class="n">mst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">edge</span><span class="p">)</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>            <span class="n">dsu</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">edge</span><span class="o">.</span><span class="n">source</span><span class="p">,</span> <span class="n">edge</span><span class="o">.</span><span class="n">destination</span><span class="p">)</span>
 </span></code></pre></div>
 </li>
 <li>
